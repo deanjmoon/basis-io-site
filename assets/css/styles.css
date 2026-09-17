@@ -392,14 +392,12 @@ img.person__photo { padding: 0; object-fit: cover; height: auto; }
 .site-footer__row {
   display: flex; flex-wrap: wrap;
   align-items: center; justify-content: space-between;
-  gap: 24px; margin-bottom: 36px;
+  gap: 24px; margin-bottom: 16px;
 }
 .site-footer__contact { display: flex; align-items: center; gap: 24px; }
 .site-footer__contact a:first-child { font: 400 16px/1.4 var(--font-body); color: var(--paper); }
 
 .site-footer__legal {
-  border-top: 1px solid var(--accent);
-  padding-top: 28px;
   display: flex; flex-wrap: wrap;
   align-items: center; justify-content: space-between;
   gap: 24px;
