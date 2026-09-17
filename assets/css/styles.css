@@ -291,6 +291,7 @@ h3 { font: 700 21px/1.25 var(--font-headline); text-wrap: pretty; }
   display: flex; gap: 32px; align-items: flex-start;
   border: 1px solid var(--blue-200); padding: 36px;
   box-shadow: 0 6px 16px rgba(11, 28, 48, 0.10);
+  border-radius: 4px; /* client-requested exception to radius-0 (2026-09-18) */
 }
 .person__photo {
   width: 132px; flex: 0 0 132px; aspect-ratio: 4 / 5;

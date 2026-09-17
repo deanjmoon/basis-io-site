@@ -10,8 +10,9 @@ Three service pillars: Advice construction · Admin services · Practice consult
    whole job is to be read by people, search crawlers and AI crawlers.
 2. **No dependencies.** No npm, no bundler, no CSS framework. `index.html`, one stylesheet,
    one small progressive-enhancement script. If a change seems to need a build step, it doesn't.
-3. **The design system is binding** (basis.IO): **corner radius 0 everywhere**, **no shadows**
-   (one named exception, below), no gradients, no photography beyond the three team portraits,
+3. **The design system is binding** (basis.IO): **corner radius 0 everywhere** (one
+   client-requested exception, 2026-09-18: `.person` founder cards carry 4px), **no shadows**
+   (two named exceptions, below), no gradients, no photography beyond the three team portraits,
    no icon library, no emoji. Depth comes from 1px hairline rules and the schematic grid.
 4. **Australian English.** *licensee, organisation, programme, colour.*
 5. **Voice:** third person, short declaratives, mechanism not benefit. Never "seamless",
