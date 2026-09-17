@@ -182,8 +182,25 @@ h3 { font: 700 21px/1.25 var(--font-headline); text-wrap: pretty; }
   white-space: nowrap;
   border-bottom: 1px solid var(--blue-200);
   padding-bottom: 3px;
+  position: relative;
 }
-.site-nav a:hover { color: var(--navy); border-bottom-color: var(--accent); }
+.site-nav a::after {
+  content: ""; position: absolute; left: 0; bottom: -1px;
+  width: 100%; height: 1px; background: var(--accent);
+  transform: scaleX(0); transform-origin: left;
+  transition: transform 240ms var(--ease);
+}
+.site-nav a:hover { color: var(--navy); }
+.site-nav a:hover::after { transform: none; }
+
+/* scroll progress — a 1px accent hairline along the header's bottom rule,
+   scaled by the enhancement script */
+.scroll-progress {
+  position: absolute; left: 0; bottom: -1px;
+  width: 100%; height: 1px; background: var(--accent);
+  transform: scaleX(0); transform-origin: left;
+  pointer-events: none;
+}
 
 /* ---------- buttons ---------- */
 
@@ -198,8 +215,20 @@ h3 { font: 700 21px/1.25 var(--font-headline); text-wrap: pretty; }
 }
 .btn--sm { font-size: 14px; padding: 10px 18px; }
 
-.btn--primary { background: var(--accent); border-color: var(--accent); color: var(--paper); }
-.btn--primary:hover { background: var(--panel); border-color: var(--panel); color: var(--paper); }
+.btn--primary {
+  background: var(--accent); border-color: var(--accent); color: var(--paper);
+  position: relative; overflow: hidden;
+}
+/* solid --panel plate slides in under the label — a fill sweep, not a gradient */
+.btn--primary::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: var(--panel);
+  transform: translateX(-101%);
+  transition: transform 260ms var(--ease);
+}
+.btn--primary:hover { border-color: var(--panel); color: var(--paper); }
+.btn--primary:hover::before,
+.btn--primary:focus-visible::before { transform: none; }
 
 .btn--secondary { background: transparent; border-color: var(--accent); color: var(--navy); }
 .btn--secondary:hover { background: transparent; border-color: var(--panel); color: var(--panel); }
@@ -222,7 +251,15 @@ h3 { font: 700 21px/1.25 var(--font-headline); text-wrap: pretty; }
   border-bottom: 1px solid var(--blue-200);
   padding-bottom: 4px;
   margin-top: 4px;
+  position: relative;
 }
+.rule-link::after {
+  content: ""; position: absolute; left: 0; bottom: -1px;
+  width: 100%; height: 1px; background: var(--accent);
+  transform: scaleX(0); transform-origin: left;
+  transition: transform 260ms var(--ease);
+}
+.rule-link:hover::after { transform: none; }
 .band--navy .rule-link { color: var(--blue-200); border-bottom-color: var(--accent); }
 .band--navy .rule-link:hover { color: var(--paper); }
 .rule-link--lg {
@@ -247,7 +284,14 @@ h3 { font: 700 21px/1.25 var(--font-headline); text-wrap: pretty; }
 }
 .proof p:last-child { font: 400 17px/1.45 var(--font-body); text-wrap: pretty; }
 
-.pillar { display: flex; flex-direction: column; gap: 16px; border-bottom: 1px solid var(--accent); padding-bottom: 28px; }
+.pillar { display: flex; flex-direction: column; gap: 16px; border-bottom: 1px solid var(--accent); padding-bottom: 28px; position: relative; }
+.pillar::after {
+  content: ""; position: absolute; left: 0; bottom: -1px;
+  width: 100%; height: 2px; background: var(--blue-200);
+  transform: scaleX(0); transform-origin: left;
+  transition: transform 300ms var(--ease);
+}
+.pillar:hover::after { transform: none; }
 .pillar p:not(.numeral) { font: 400 17px/1.55 var(--font-body); }
 
 .scope { display: flex; flex-direction: column; gap: 12px; }
@@ -303,6 +347,7 @@ h3 { font: 700 21px/1.25 var(--font-headline); text-wrap: pretty; }
   display: inline-flex; align-items: center; justify-content: center;
   font: 700 13px/1 var(--font-headline);
   margin-top: 10px;
+  transition: border-color 180ms var(--ease), color 180ms var(--ease);
 }
 .mark:hover { border-color: var(--accent); }
 
@@ -389,6 +434,17 @@ h3 { font: 700 21px/1.25 var(--font-headline); text-wrap: pretty; }
   opacity: 1; transform: none;
   transition: opacity 280ms var(--ease), transform 280ms var(--ease);
 }
+
+/* hero entrance — .js-motion is set on <html> by the script,
+   only when motion is allowed, so the no-JS page stays fully visible */
+.js-motion .hero > * { opacity: 0; transform: translateY(16px); }
+.js-motion.hero-in .hero > * {
+  opacity: 1; transform: none;
+  transition: opacity 560ms var(--ease), transform 560ms var(--ease);
+}
+.js-motion.hero-in .hero > :nth-child(2) { transition-delay: 90ms; }
+.js-motion.hero-in .hero > :nth-child(3) { transition-delay: 180ms; }
+.js-motion.hero-in .hero > :nth-child(4) { transition-delay: 270ms; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
