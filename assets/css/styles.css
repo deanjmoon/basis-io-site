@@ -285,7 +285,13 @@ h3 { font: 700 21px/1.25 var(--font-headline); text-wrap: pretty; }
 .step { display: flex; flex-direction: column; gap: 14px; border-top: 2px solid var(--navy); padding-top: 24px; }
 .step p:not(.eyebrow) { font: 400 16px/1.5 var(--font-body); color: var(--slate); }
 
-.person { display: flex; gap: 32px; align-items: flex-start; border: 1px solid var(--blue-200); padding: 36px; }
+/* Second named exception to the no-shadow rule: founder cards, at the
+   client's request (2026-09-18). Do not add shadows anywhere else. */
+.person {
+  display: flex; gap: 32px; align-items: flex-start;
+  border: 1px solid var(--blue-200); padding: 36px;
+  box-shadow: 0 6px 16px rgba(11, 28, 48, 0.10);
+}
 .person__photo {
   width: 132px; flex: 0 0 132px; aspect-ratio: 4 / 5;
   background: var(--card); border: 1px solid var(--blue-200);

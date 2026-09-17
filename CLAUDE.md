@@ -17,9 +17,10 @@ Three service pillars: Advice construction · Admin services · Practice consult
 5. **Voice:** third person, short declaratives, mechanism not benefit. Never "seamless",
    "revolutionary", "game-changing". Any number carries its source and date.
 
-### The one shadow
-`.btn-row` carries `filter: drop-shadow(...)` on the hero and CTA button pairs, at the client's
-explicit request. Keep it. Do not add shadows anywhere else.
+### The two shadows
+`.btn-row` carries `filter: drop-shadow(...)` on the hero and CTA button pairs, and
+`.person` (founder cards) carries a soft `box-shadow` — both at the client's explicit
+request (cards added 2026-09-18). Keep them. Do not add shadows anywhere else.
 
 ## Layout contract
 
