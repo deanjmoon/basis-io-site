@@ -46,8 +46,13 @@ heading → content 48px. No media queries beyond the one 720px block — grids 
 | `--ink-on-navy` | `#E7EDF4` | Body copy on navy |
 
 **Ground order is deliberate:** navy (hero) → light blue → white → navy (services) →
-white → light blue → white → light blue → white → navy (CTA) → navy (footer).
-The schematic grid appears on navy plates **only** — never on a light section.
+white → light blue → white → light blue → white (team) → light blue (enquiry) →
+navy (CTA) → navy (footer).
+The schematic grid appears on navy plates **only** — with one client-requested
+exception (2026-09-18): the Who we are band carries a faint accent-tinted grid
+(`band--grid-light`, 7% opacity) with person cards on solid paper for legibility.
+Navy plates also carry small accent registration marks (crosshairs) at the
+corners of the content column.
 
 ## Type
 
