@@ -47,7 +47,10 @@ heading → content 48px. No media queries beyond the one 720px block — grids 
 
 **Ground order is deliberate:** navy (hero) → light blue → white → navy (services) →
 white → light blue → white → light blue → white → navy (CTA) → navy (footer).
-The schematic grid appears on navy plates **only** — never on a light section.
+The full schematic grid appears on navy plates. Selected light sections (proof strip,
+engagement, team) carry `.band--grid-sky` — a fainter accent-blue linework variant added
+at the client's request (Sep 2026). Do not put the navy-weight grid on a light section,
+and keep the sky variant off text-dense prose sections (About, the three service details).
 
 ## Type
 
