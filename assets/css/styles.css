@@ -338,7 +338,7 @@ h3 { font: 700 21px/1.25 var(--font-headline); text-wrap: pretty; }
 .reveal { opacity: 0; transform: translateY(12px); }
 .reveal.is-in {
   opacity: 1; transform: none;
-  transition: opacity 280ms var(--ease), transform 280ms var(--ease);
+  transition: opacity 560ms var(--ease), transform 560ms var(--ease);
 }
 
 /* Staggered heading entrances: eyebrow settles in first, then the heading,
@@ -351,20 +351,20 @@ h3 { font: 700 21px/1.25 var(--font-headline); text-wrap: pretty; }
 
 .reveal.is-in > .eyebrow {
   opacity: 1; transform: none; letter-spacing: 0.18em;
-  transition: opacity 340ms var(--ease), transform 340ms var(--ease), letter-spacing 560ms var(--ease);
+  transition: opacity 680ms var(--ease), transform 680ms var(--ease), letter-spacing 1100ms var(--ease);
 }
 .reveal.is-in > h1,
 .reveal.is-in > h2 {
   opacity: 1; transform: none;
-  transition: opacity 340ms var(--ease) 100ms, transform 340ms var(--ease) 100ms;
+  transition: opacity 680ms var(--ease) 180ms, transform 680ms var(--ease) 180ms;
 }
 .reveal.is-in > .lede {
   opacity: 1; transform: none;
-  transition: opacity 340ms var(--ease) 200ms, transform 340ms var(--ease) 200ms;
+  transition: opacity 680ms var(--ease) 360ms, transform 680ms var(--ease) 360ms;
 }
 .reveal.is-in > .btn-row {
   opacity: 1; transform: none;
-  transition: opacity 340ms var(--ease) 300ms, transform 340ms var(--ease) 300ms;
+  transition: opacity 680ms var(--ease) 540ms, transform 680ms var(--ease) 540ms;
 }
 
 @media (prefers-reduced-motion: reduce) {
