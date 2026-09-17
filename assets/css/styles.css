@@ -414,7 +414,7 @@ img.person__photo { padding: 0; object-fit: cover; height: auto; }
   .split, .grid--pillars, .grid--steps { gap: 40px; }
   .btn-row .btn { flex: 1 1 100%; }
   .person { flex-direction: column; gap: 24px; }
-  .mark { width: 44px; height: 44px; min-width: 44px; font-size: 14px; }
+  .mark { width: 44px; height: 44px; min-width: 44px; font-size: 20px; }
 }
 
 /* ---------- motion: measured, never animated ---------- */
