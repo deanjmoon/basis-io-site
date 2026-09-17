@@ -422,15 +422,15 @@ img.person__photo { padding: 0; object-fit: cover; height: auto; }
 .reveal { opacity: 0; transform: translateY(12px); }
 .reveal.is-in {
   opacity: 1; transform: none;
-  transition: opacity 1300ms var(--ease), transform 1300ms var(--ease);
+  transition: opacity 2000ms var(--ease), transform 2000ms var(--ease);
 }
 
 /* pace hierarchy: headlines 1300ms → body copy 1900ms → boxes 2500ms */
 .prose.reveal.is-in {
-  transition: opacity 1900ms var(--ease), transform 1900ms var(--ease);
+  transition: opacity 2800ms var(--ease), transform 2800ms var(--ease);
 }
 .person.reveal.is-in {
-  transition: opacity 2500ms var(--ease), transform 2500ms var(--ease);
+  transition: opacity 3500ms var(--ease), transform 3500ms var(--ease);
 }
 
 /* Staggered heading entrances: eyebrow settles in first, then the heading,
@@ -443,27 +443,27 @@ img.person__photo { padding: 0; object-fit: cover; height: auto; }
 
 .reveal.is-in > .eyebrow {
   opacity: 1; transform: none; letter-spacing: 0.18em;
-  transition: opacity 1300ms var(--ease), transform 1300ms var(--ease), letter-spacing 2000ms var(--ease);
+  transition: opacity 2000ms var(--ease), transform 2000ms var(--ease), letter-spacing 3000ms var(--ease);
 }
 .reveal.is-in > h1,
 .reveal.is-in > h2 {
   opacity: 1; transform: none;
-  transition: opacity 1300ms var(--ease) 300ms, transform 1300ms var(--ease) 300ms;
+  transition: opacity 2000ms var(--ease) 450ms, transform 2000ms var(--ease) 450ms;
 }
 .reveal.is-in > .lede {
   opacity: 1; transform: none;
-  transition: opacity 1900ms var(--ease) 600ms, transform 1900ms var(--ease) 600ms;
+  transition: opacity 2800ms var(--ease) 900ms, transform 2800ms var(--ease) 900ms;
 }
 .reveal.is-in > .btn-row {
   opacity: 1; transform: none;
-  transition: opacity 1300ms var(--ease) 900ms, transform 1300ms var(--ease) 900ms;
+  transition: opacity 2000ms var(--ease) 1350ms, transform 2000ms var(--ease) 1350ms;
 }
 
 /* typewriter-style word cascade on body copy: main.js wraps words in .tw
    spans with incremental delays; the host block stops fading as a unit
    and lets the words carry the entrance instead */
 .reveal .tw { opacity: 0; }
-.reveal.is-in .tw { opacity: 1; transition: opacity 320ms var(--ease); }
+.reveal.is-in .tw { opacity: 1; transition: opacity 500ms var(--ease); }
 .reveal > .lede.tw-host,
 .reveal.is-in > .lede.tw-host { opacity: 1; transform: none; transition: none; }
 .prose.reveal.tw-container,
@@ -473,7 +473,7 @@ img.person__photo { padding: 0; object-fit: cover; height: auto; }
 .prose.reveal.tw-container > .scope { opacity: 0; transform: translateY(12px); }
 .prose.reveal.tw-container.is-in > .scope {
   opacity: 1; transform: none;
-  transition: opacity 1900ms var(--ease) 900ms, transform 1900ms var(--ease) 900ms;
+  transition: opacity 2800ms var(--ease) 1400ms, transform 2800ms var(--ease) 1400ms;
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -13,12 +13,12 @@
   document.querySelectorAll('.prose > p, p.lede').forEach(function (p) {
     var words = p.textContent.split(/\s+/).filter(Boolean);
     if (!words.length) return;
-    var base = p.classList.contains('lede') ? 600 : 200;
+    var base = p.classList.contains('lede') ? 900 : 300;
     p.textContent = '';
     words.forEach(function (w, i) {
       var s = document.createElement('span');
       s.className = 'tw';
-      s.style.transitionDelay = (base + Math.min(i * 30, 2400)) + 'ms';
+      s.style.transitionDelay = (base + Math.min(i * 55, 4000)) + 'ms';
       s.textContent = w;
       p.appendChild(s);
       p.appendChild(document.createTextNode(' '));
