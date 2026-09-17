@@ -264,8 +264,8 @@ h3 { font: 700 21px/1.25 var(--font-headline); text-wrap: pretty; }
 .band--navy .rule-link:hover { color: var(--paper); }
 .rule-link--lg {
   display: inline-block; margin-top: 36px;
-  font: 400 17px/1.4 var(--font-body);
-  letter-spacing: 0; text-transform: none;
+  font: 400 12px/1.4 var(--font-label);
+  letter-spacing: 0.14em; text-transform: uppercase;
 }
 
 /* ---------- sections ---------- */
