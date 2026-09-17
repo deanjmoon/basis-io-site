@@ -92,7 +92,7 @@ Damien's, Gina's and Dean's personal LinkedIn URLs are already live and correct.
 - Fourth scope line for Admin services and for Practice consulting
 - Three founder bios (keep them the same length — the cards sit side by side)
 - Three team portraits, 4:5 crop, ~1200×1500, shot the same way
-- ABN in the footer
+- ~~ABN in the footer~~ done 2026-09-18 (49 670 018 658, Rocket FP Solutions Pty Ltd)
 - A privacy policy at `/privacy/` — the footer links to it and it does not exist yet
 - `assets/img/og-image.png` at 1200×630 — a navy schematic plate with the wordmark
 - Page `<title>` and meta description — the client is writing these
