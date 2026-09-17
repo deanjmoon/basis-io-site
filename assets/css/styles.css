@@ -264,6 +264,40 @@ h3 { font: 700 21px/1.25 var(--font-headline); text-wrap: pretty; }
 }
 .cta__copy { max-width: 600px; display: flex; flex-direction: column; gap: 20px; }
 
+/* ---------- enquiry form ---------- */
+
+.enquiry-form { display: flex; flex-direction: column; gap: 24px; }
+.enquiry-form .field { display: flex; flex-direction: column; gap: 8px; }
+.enquiry-form label {
+  font: 400 10px/1 var(--font-label);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--slate);
+}
+.enquiry-form input,
+.enquiry-form textarea {
+  font: 400 17px/1.5 var(--font-body);
+  color: var(--navy);
+  background: var(--paper);
+  border: 1px solid var(--blue-200);
+  border-radius: 0;
+  padding: 12px 14px;
+  width: 100%;
+  transition: border-color 180ms var(--ease);
+}
+.enquiry-form input:hover,
+.enquiry-form textarea:hover { border-color: var(--blue-300); }
+.enquiry-form input:focus-visible,
+.enquiry-form textarea:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 0;
+  border-color: var(--accent);
+}
+.enquiry-form textarea { resize: vertical; min-height: 140px; }
+.enquiry-form button { cursor: pointer; align-self: flex-start; }
+.enquiry-form__hp { display: none !important; }
+.enquiry-form__alt { font: 400 15px/1.5 var(--font-body); color: var(--slate); }
+
 /* ---------- footer ---------- */
 
 .site-footer { background: var(--navy); color: var(--paper); padding: 56px 0 64px; }

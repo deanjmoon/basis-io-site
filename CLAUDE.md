@@ -67,12 +67,13 @@ Spelling is **`[basis-io]`** everywhere, square brackets included. Never "basis.
 
 ## Before deploy — find and replace
 
-| Token | Becomes |
-| --- | --- |
-| `REPLACE-WITH-DOMAIN` | the live domain (appears in canonical, OG tags, JSON-LD, robots.txt, sitemap.xml) |
-| `REPLACE-BOOKING` | the booking URL — 3 instances |
-| `support@REPLACE-DOMAIN` | the real support address — 3 instances |
-| `REPLACE-COMPANY-PAGE` | the LinkedIn company page slug — 3 instances |
+| Token | Becomes | Status |
+| --- | --- | --- |
+| `REPLACE-WITH-DOMAIN` | the live domain (canonical, OG tags, JSON-LD, robots.txt, sitemap.xml) | ✅ Done — `deanjmoon.github.io/basis-io-site` for now; redo when custom domain lands |
+| `REPLACE-BOOKING` | the booking URL — 3 instances | Pending — will be a Microsoft "Book with me" link |
+| `support@REPLACE-DOMAIN` | the real support address | ✅ Done — `support@basis-io.com.au` |
+| `REPLACE-COMPANY-PAGE` | the LinkedIn company page slug — 3 instances | Pending |
+| `REPLACE-FORM-ID` | the Formspree endpoint ID for the enquiry form (`f/xxxxxxx`) | Pending — **do not deploy the form section until this is set** |
 
 Damien's, Gina's and Dean's personal LinkedIn URLs are already live and correct.
 
