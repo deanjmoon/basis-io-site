@@ -231,7 +231,8 @@ h3 { font: 700 21px/1.25 var(--font-headline); text-wrap: pretty; }
 
 /* Soft shadows on boxed elements (client direction, 2026-09-18).
    Buttons inside .btn-row keep their pair-level drop-shadow instead. */
-.btn { box-shadow: 0 4px 10px rgba(11, 28, 48, 0.14); }
+.btn { box-shadow: 0 4px 10px rgba(11, 28, 48, 0.14); border-radius: 4px; }
+.btn:focus-visible { border-radius: 4px; }
 .btn-row .btn { box-shadow: none; }
 
 .btn--primary { background: var(--accent); border-color: var(--accent); color: var(--paper); }
@@ -303,6 +304,7 @@ h3 { font: 700 21px/1.25 var(--font-headline); text-wrap: pretty; }
   background: var(--card); border: 1px solid var(--blue-200);
   display: flex; align-items: flex-end; padding: 12px;
   box-shadow: 0 3px 10px rgba(11, 28, 48, 0.10);
+  border-radius: 4px;
 }
 .person__photo span {
   font: 400 9px/1.2 var(--font-label); letter-spacing: 0.18em;
@@ -319,6 +321,7 @@ h3 { font: 700 21px/1.25 var(--font-headline); text-wrap: pretty; }
   font: 700 13px/1 var(--font-headline);
   margin-top: 10px;
   box-shadow: 0 2px 6px rgba(11, 28, 48, 0.12);
+  border-radius: 4px;
 }
 .mark:hover { border-color: var(--accent); }
 
@@ -345,7 +348,7 @@ h3 { font: 700 21px/1.25 var(--font-headline); text-wrap: pretty; }
   color: var(--navy);
   background: var(--paper);
   border: 1px solid var(--blue-200);
-  border-radius: 0;
+  border-radius: 4px;
   padding: 12px 14px;
   width: 100%;
   transition: border-color 180ms var(--ease);
@@ -404,7 +407,7 @@ h3 { font: 700 21px/1.25 var(--font-headline); text-wrap: pretty; }
 .reveal { opacity: 0; transform: translateY(12px); }
 .reveal.is-in {
   opacity: 1; transform: none;
-  transition: opacity 900ms var(--ease), transform 900ms var(--ease);
+  transition: opacity 1300ms var(--ease), transform 1300ms var(--ease);
 }
 
 /* Staggered heading entrances: eyebrow settles in first, then the heading,
@@ -417,20 +420,20 @@ h3 { font: 700 21px/1.25 var(--font-headline); text-wrap: pretty; }
 
 .reveal.is-in > .eyebrow {
   opacity: 1; transform: none; letter-spacing: 0.18em;
-  transition: opacity 1100ms var(--ease), transform 1100ms var(--ease), letter-spacing 1800ms var(--ease);
+  transition: opacity 1300ms var(--ease), transform 1300ms var(--ease), letter-spacing 2000ms var(--ease);
 }
 .reveal.is-in > h1,
 .reveal.is-in > h2 {
   opacity: 1; transform: none;
-  transition: opacity 1100ms var(--ease) 300ms, transform 1100ms var(--ease) 300ms;
+  transition: opacity 1300ms var(--ease) 300ms, transform 1300ms var(--ease) 300ms;
 }
 .reveal.is-in > .lede {
   opacity: 1; transform: none;
-  transition: opacity 1100ms var(--ease) 600ms, transform 1100ms var(--ease) 600ms;
+  transition: opacity 1300ms var(--ease) 600ms, transform 1300ms var(--ease) 600ms;
 }
 .reveal.is-in > .btn-row {
   opacity: 1; transform: none;
-  transition: opacity 1100ms var(--ease) 900ms, transform 1100ms var(--ease) 900ms;
+  transition: opacity 1300ms var(--ease) 900ms, transform 1300ms var(--ease) 900ms;
 }
 
 @media (prefers-reduced-motion: reduce) {
