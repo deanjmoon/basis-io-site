@@ -73,7 +73,7 @@ Spelling is **`[basis-io]`** everywhere, square brackets included. Never "basis.
 | `REPLACE-BOOKING` | the booking URL — 3 instances | Pending — will be a Microsoft "Book with me" link |
 | `support@REPLACE-DOMAIN` | the real support address | ✅ Done — `support@basis-io.com.au` |
 | `REPLACE-COMPANY-PAGE` | the LinkedIn company page slug — 3 instances | Pending |
-| `REPLACE-FORM-ID` | the Formspree endpoint ID for the enquiry form (`f/xxxxxxx`) | Pending — **do not deploy the form section until this is set** |
+| `REPLACE-FORM-ID` | the Formspree endpoint ID for the enquiry form | ✅ Done — `f/xoevqljl`, delivers to support@basis-io.com.au |
 
 Damien's, Gina's and Dean's personal LinkedIn URLs are already live and correct.
 
