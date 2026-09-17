@@ -299,6 +299,18 @@ h3 { font: 700 21px/1.25 var(--font-headline); text-wrap: pretty; }
   box-shadow: 0 6px 16px rgba(11, 28, 48, 0.10);
   border-radius: 4px; /* client-requested exception to radius-0 (2026-09-18) */
 }
+.person__photo-link {
+  display: block; flex: 0 0 132px; width: 132px;
+  transition: transform 240ms var(--ease);
+}
+.person__photo-link:hover,
+.person__photo-link:focus-visible { transform: scale(1.05); }
+.person__photo-link:hover .person__photo,
+.person__photo-link:focus-visible .person__photo {
+  box-shadow: 0 10px 24px rgba(11, 28, 48, 0.20);
+}
+.person__photo-link:active { transform: scale(1.02); }
+
 .person__photo {
   width: 132px; flex: 0 0 132px; aspect-ratio: 4 / 5;
   background: var(--card); border: 1px solid var(--blue-200);
