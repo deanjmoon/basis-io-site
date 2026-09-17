@@ -18,10 +18,12 @@ Three service pillars: Advice construction · Admin services · Practice consult
 5. **Voice:** third person, short declaratives, mechanism not benefit. Never "seamless",
    "revolutionary", "game-changing". Any number carries its source and date.
 
-### The two shadows
-`.btn-row` carries `filter: drop-shadow(...)` on the hero and CTA button pairs, and
-`.person` (founder cards) carries a soft `box-shadow` — both at the client's explicit
-request (cards added 2026-09-18). Keep them. Do not add shadows anywhere else.
+### Shadows (policy revised 2026-09-18 at the client's direction)
+The original rule was no shadows bar `.btn-row`. The client has since asked for soft
+shadows on all boxed elements. Current state: `.btn-row` keeps its pair-level
+`drop-shadow`; standalone `.btn`, `.person` cards, `.person__photo` tiles, `.mark`
+squares and the enquiry form fields carry soft `box-shadow`, scaled to element size.
+Unboxed elements (pillars, steps, proof items, text) stay shadow-free.
 
 ## Layout contract
 
