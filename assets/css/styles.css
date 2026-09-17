@@ -306,6 +306,7 @@ h3 { font: 700 21px/1.25 var(--font-headline); text-wrap: pretty; }
   box-shadow: 0 3px 10px rgba(11, 28, 48, 0.10);
   border-radius: 4px;
 }
+img.person__photo { padding: 0; object-fit: cover; height: auto; }
 .person__photo span {
   font: 400 9px/1.2 var(--font-label); letter-spacing: 0.18em;
   text-transform: uppercase; color: var(--blue-300);
