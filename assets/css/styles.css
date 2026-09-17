@@ -333,7 +333,7 @@ img.person__photo { padding: 0; object-fit: cover; height: auto; }
   background: var(--accent);
   color: var(--paper);
   display: inline-flex; align-items: center; justify-content: center;
-  font: 700 13px/1 var(--font-headline);
+  font: 700 18px/1 var(--font-headline);
   margin-top: 10px;
   box-shadow: 0 2px 6px rgba(11, 28, 48, 0.12);
   border-radius: 4px;
