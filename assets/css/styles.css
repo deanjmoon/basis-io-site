@@ -410,6 +410,14 @@ h3 { font: 700 21px/1.25 var(--font-headline); text-wrap: pretty; }
   transition: opacity 1300ms var(--ease), transform 1300ms var(--ease);
 }
 
+/* pace hierarchy: headlines 1300ms → body copy 1900ms → boxes 2500ms */
+.prose.reveal.is-in {
+  transition: opacity 1900ms var(--ease), transform 1900ms var(--ease);
+}
+.person.reveal.is-in {
+  transition: opacity 2500ms var(--ease), transform 2500ms var(--ease);
+}
+
 /* Staggered heading entrances: eyebrow settles in first, then the heading,
    then supporting copy and buttons. Child delays run from .is-in. */
 .reveal > .eyebrow { opacity: 0; transform: translateY(10px); letter-spacing: 0.34em; }
@@ -429,7 +437,7 @@ h3 { font: 700 21px/1.25 var(--font-headline); text-wrap: pretty; }
 }
 .reveal.is-in > .lede {
   opacity: 1; transform: none;
-  transition: opacity 1300ms var(--ease) 600ms, transform 1300ms var(--ease) 600ms;
+  transition: opacity 1900ms var(--ease) 600ms, transform 1900ms var(--ease) 600ms;
 }
 .reveal.is-in > .btn-row {
   opacity: 1; transform: none;
