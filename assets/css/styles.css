@@ -468,6 +468,13 @@ img.person__photo { padding: 0; object-fit: cover; height: auto; }
 .reveal.is-in > .lede.tw-host { opacity: 1; transform: none; transition: none; }
 .prose.reveal.tw-container,
 .prose.reveal.tw-container.is-in { opacity: 1; transform: none; transition: none; }
+/* non-paragraph content inside a typing prose block (scope lists) keeps a
+   block fade, sequenced to land after the paragraph has mostly typed */
+.prose.reveal.tw-container > .scope { opacity: 0; transform: translateY(12px); }
+.prose.reveal.tw-container.is-in > .scope {
+  opacity: 1; transform: none;
+  transition: opacity 1900ms var(--ease) 900ms, transform 1900ms var(--ease) 900ms;
+}
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
