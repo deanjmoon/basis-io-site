@@ -9,6 +9,25 @@
 
   targets.forEach(function (el) { el.classList.add('reveal'); });
 
+  // typewriter-style word cascade on body copy (ledes and prose paragraphs)
+  document.querySelectorAll('.prose > p, p.lede').forEach(function (p) {
+    var words = p.textContent.split(/\s+/).filter(Boolean);
+    if (!words.length) return;
+    var base = p.classList.contains('lede') ? 600 : 200;
+    p.textContent = '';
+    words.forEach(function (w, i) {
+      var s = document.createElement('span');
+      s.className = 'tw';
+      s.style.transitionDelay = (base + Math.min(i * 30, 2400)) + 'ms';
+      s.textContent = w;
+      p.appendChild(s);
+      p.appendChild(document.createTextNode(' '));
+    });
+    p.classList.add('tw-host');
+    var host = p.closest('.prose');
+    if (host) host.classList.add('tw-container');
+  });
+
   var io = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry, i) {
       if (!entry.isIntersecting) return;

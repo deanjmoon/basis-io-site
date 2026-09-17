@@ -459,11 +459,21 @@ img.person__photo { padding: 0; object-fit: cover; height: auto; }
   transition: opacity 1300ms var(--ease) 900ms, transform 1300ms var(--ease) 900ms;
 }
 
+/* typewriter-style word cascade on body copy: main.js wraps words in .tw
+   spans with incremental delays; the host block stops fading as a unit
+   and lets the words carry the entrance instead */
+.reveal .tw { opacity: 0; }
+.reveal.is-in .tw { opacity: 1; transition: opacity 320ms var(--ease); }
+.reveal > .lede.tw-host,
+.reveal.is-in > .lede.tw-host { opacity: 1; transform: none; transition: none; }
+.prose.reveal.tw-container,
+.prose.reveal.tw-container.is-in { opacity: 1; transform: none; transition: none; }
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   * { transition-duration: 0ms !important; animation-duration: 0ms !important; }
   .reveal, .reveal > .eyebrow, .reveal > h1, .reveal > h2,
-  .reveal > .lede, .reveal > .btn-row { opacity: 1; transform: none; }
+  .reveal > .lede, .reveal > .btn-row, .reveal .tw { opacity: 1; transform: none; }
 }
 
 @media print {
