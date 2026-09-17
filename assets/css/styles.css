@@ -341,10 +341,37 @@ h3 { font: 700 21px/1.25 var(--font-headline); text-wrap: pretty; }
   transition: opacity 280ms var(--ease), transform 280ms var(--ease);
 }
 
+/* Staggered heading entrances: eyebrow settles in first, then the heading,
+   then supporting copy and buttons. Child delays run from .is-in. */
+.reveal > .eyebrow { opacity: 0; transform: translateY(10px); letter-spacing: 0.34em; }
+.reveal > h1,
+.reveal > h2,
+.reveal > .lede,
+.reveal > .btn-row { opacity: 0; transform: translateY(16px); }
+
+.reveal.is-in > .eyebrow {
+  opacity: 1; transform: none; letter-spacing: 0.18em;
+  transition: opacity 340ms var(--ease), transform 340ms var(--ease), letter-spacing 560ms var(--ease);
+}
+.reveal.is-in > h1,
+.reveal.is-in > h2 {
+  opacity: 1; transform: none;
+  transition: opacity 340ms var(--ease) 100ms, transform 340ms var(--ease) 100ms;
+}
+.reveal.is-in > .lede {
+  opacity: 1; transform: none;
+  transition: opacity 340ms var(--ease) 200ms, transform 340ms var(--ease) 200ms;
+}
+.reveal.is-in > .btn-row {
+  opacity: 1; transform: none;
+  transition: opacity 340ms var(--ease) 300ms, transform 340ms var(--ease) 300ms;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   * { transition-duration: 0ms !important; animation-duration: 0ms !important; }
-  .reveal { opacity: 1; transform: none; }
+  .reveal, .reveal > .eyebrow, .reveal > h1, .reveal > h2,
+  .reveal > .lede, .reveal > .btn-row { opacity: 1; transform: none; }
 }
 
 @media print {

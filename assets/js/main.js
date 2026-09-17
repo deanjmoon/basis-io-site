@@ -4,7 +4,7 @@
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   if (!('IntersectionObserver' in window)) return;
 
-  var targets = document.querySelectorAll('.band__head, .pillar, .split, .proof, .step, .person, .cta__copy');
+  var targets = document.querySelectorAll('.hero, .band__head, .split__head, .prose, .pillar, .proof, .step, .person, .cta__copy');
   if (!targets.length) return;
 
   targets.forEach(function (el) { el.classList.add('reveal'); });
