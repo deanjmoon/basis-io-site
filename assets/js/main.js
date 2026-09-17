@@ -21,4 +21,18 @@
   }, { rootMargin: '0px 0px -10% 0px', threshold: 0.08 });
 
   targets.forEach(function (el) { io.observe(el); });
+
+  // schematic grid crawl-in on navy plates
+  var grids = document.querySelectorAll('.band--grid');
+  if (grids.length) {
+    grids.forEach(function (el) { el.classList.add('grid-anim'); });
+    var gio = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('grid-in');
+        gio.unobserve(entry.target);
+      });
+    }, { threshold: 0.05 });
+    grids.forEach(function (el) { gio.observe(el); });
+  }
 })();
