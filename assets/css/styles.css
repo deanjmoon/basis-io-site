@@ -418,6 +418,8 @@ img.person__photo { padding: 0; object-fit: cover; height: auto; }
 
 @media (max-width: 720px) {
   :root { --gutter: 28px; --band-y: 56px; }
+  /* the full header is too tall to pin on a phone */
+  .site-header { position: static; }
   .split, .grid--pillars, .grid--steps { gap: 40px; }
   .btn-row .btn { flex: 1 1 100%; }
   .person { flex-direction: column; gap: 24px; }
