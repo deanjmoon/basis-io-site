@@ -14,6 +14,9 @@ Three service pillars: Advice construction · Admin services · Practice consult
    client-requested exception, 2026-09-18: `.person` founder cards carry 4px), **no shadows**
    (two named exceptions, below), no gradients, no photography beyond the three team portraits,
    no icon library, no emoji. Depth comes from 1px hairline rules and the schematic grid.
+   (Icons from the basis.IO brand guide's own icon system — `assets/img/icons/`, added
+   2026-09-18 at the client's request — are brand assets, not a third-party library.
+   White colourway on navy plates, navy colourway on light grounds.)
 4. **Australian English.** *licensee, organisation, programme, colour.*
 5. **Voice:** third person, short declaratives, mechanism not benefit. Never "seamless",
    "revolutionary", "game-changing". Any number carries its source and date.
