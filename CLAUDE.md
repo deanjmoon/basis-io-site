@@ -107,3 +107,7 @@ The client is resolving this. **Do not unilaterally rewrite copy to fix it** —
 
 GitHub Pages from the repository root of the default branch. No build step, so nothing to
 configure. `CNAME` at the root holds the custom domain.
+
+`404.html` is served by GitHub Pages for any missing path. It uses **root-absolute
+`/basis-io-site/` paths** (a 404 can be served at any URL depth, so relative paths break) —
+these must be rewritten to `/` when the custom domain lands.
