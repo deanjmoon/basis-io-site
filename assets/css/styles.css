@@ -443,8 +443,20 @@ img.person__photo { padding: 0; object-fit: cover; height: auto; }
 
 @media (max-width: 720px) {
   :root { --gutter: 28px; --band-y: 56px; }
-  /* the full header is too tall to pin on a phone */
-  .site-header { position: static; }
+  /* compact two-row header so it can stay pinned on a phone:
+     wordmark + booking button on the first line, nav on a slim second line */
+  .site-header__row { padding-top: 12px; padding-bottom: 10px; row-gap: 10px; }
+  .site-header__actions { display: contents; }
+  .wordmark { font-size: 21px; }
+  .btn--sm { order: 2; }
+  .site-nav {
+    order: 3; flex: 1 1 100%;
+    flex-wrap: nowrap; overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .site-nav::-webkit-scrollbar { display: none; }
+  .site-nav a { flex: 0 0 auto; }
   .split, .grid--pillars, .grid--steps { gap: 40px; }
   .btn-row .btn { flex: 1 1 100%; }
   .person { flex-direction: column; gap: 24px; }
