@@ -421,6 +421,8 @@ h3 { font: 700 21px/1.25 var(--font-headline); text-wrap: pretty; }
 
 @media (max-width: 720px) {
   :root { --gutter: 28px; --band-y: 56px; }
+  /* header nav shortens to Advice · Admin · Consulting; full text stays in the source */
+  .nav-tail { display: none; }
   .split, .grid--pillars, .grid--steps { gap: 40px; }
   .btn-row .btn { flex: 1 1 100%; }
   .person { flex-direction: column; gap: 24px; }
