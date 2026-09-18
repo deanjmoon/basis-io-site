@@ -237,6 +237,7 @@ h3 { font: 700 21px/1.25 var(--font-headline); text-wrap: pretty; }
   border-bottom-color: var(--accent);
   transform: scale(1.12);
 }
+.nav-short { display: none; }
 /* faux bold that keeps glyph metrics, so neighbours never shift */
 .site-header .site-nav a:hover {
   text-shadow:
@@ -457,6 +458,9 @@ img.person__photo { padding: 0; object-fit: cover; height: auto; }
   }
   .site-nav::-webkit-scrollbar { display: none; }
   .site-nav a { flex: 0 0 auto; }
+  /* short service labels fit a phone-width line */
+  .nav-full { display: none; }
+  .nav-short { display: inline; }
   .split, .grid--pillars, .grid--steps { gap: 40px; }
   .btn-row .btn { flex: 1 1 100%; }
   .person { flex-direction: column; gap: 24px; }
