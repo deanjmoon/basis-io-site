@@ -19,8 +19,19 @@
     letter-spacing: 0.04em;
   }
   .notfound .hero { gap: 16px; align-items: center; text-align: center; }
-  .notfound .hero h1 { max-width: none; }
+  .notfound .hero h1 {
+    max-width: none;
+    font-size: clamp(20px, 3.2vw, 36px);
+    white-space: nowrap;
+  }
+  .notfound .lede {
+    font-size: clamp(13px, 1.9vw, 21px);
+    max-width: 56ch;
+  }
   .notfound .btn-row { margin-top: 20px; justify-content: center; }
+  @media (max-width: 560px) {
+    .notfound .hero h1 { white-space: normal; }
+  }
 </style>
 </head>
 <body>
