@@ -198,7 +198,9 @@ h3 { font: 700 21px/1.25 var(--font-headline); text-wrap: pretty; }
 .site-header {
   border-bottom: 1px solid var(--blue-200);
   position: sticky; top: 0; z-index: 20;
-  background: var(--paper);
+  background: rgba(255, 255, 255, 0.72);
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+  backdrop-filter: saturate(180%) blur(14px);
 }
 .site-header__row {
   display: flex; flex-wrap: wrap;
@@ -281,8 +283,9 @@ h3 { font: 700 21px/1.25 var(--font-headline); text-wrap: pretty; }
 
 .pillar { display: flex; flex-direction: column; gap: 16px; }
 .pillar h3 { border-bottom: 1px solid var(--accent); padding-bottom: 14px; }
-.pillar__icon { width: 40px; height: 40px; }
-.step__icon { width: 36px; height: 36px; }
+.pillar h3, .step h3 { display: flex; align-items: center; gap: 12px; }
+.pillar__icon { width: 34px; height: 34px; }
+.step__icon { width: 28px; height: 28px; }
 .pillar p:not(.numeral) { font: 400 17px/1.55 var(--font-body); }
 
 .scope { display: flex; flex-direction: column; gap: 12px; }
