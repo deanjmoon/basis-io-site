@@ -28,7 +28,7 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; scroll-padding-top: 100px; }
 
 body {
   margin: 0;
@@ -195,7 +195,11 @@ h3 { font: 700 21px/1.25 var(--font-headline); text-wrap: pretty; }
 
 /* ---------- header ---------- */
 
-.site-header { border-bottom: 1px solid var(--blue-200); }
+.site-header {
+  border-bottom: 1px solid var(--blue-200);
+  position: sticky; top: 0; z-index: 20;
+  background: var(--paper);
+}
 .site-header__row {
   display: flex; flex-wrap: wrap;
   align-items: center; justify-content: space-between;
