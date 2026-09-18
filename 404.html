@@ -13,6 +13,12 @@
 <style>
   /* 404 fills the viewport below the header with one navy plate */
   .notfound { min-height: calc(100vh - 90px); display: flex; align-items: center; border-bottom: none; }
+  .nf-code {
+    font: 400 clamp(110px, 24vw, 240px)/1 "Silkscreen", "Courier New", monospace;
+    color: var(--paper);
+    letter-spacing: 0.04em;
+    margin-left: -0.06em;
+  }
 </style>
 </head>
 <body>
@@ -26,8 +32,9 @@
 <main id="main">
   <section class="band band--navy band--grid notfound" aria-labelledby="nf-h">
     <div class="wrap hero">
-      <p class="eyebrow">Error · 404</p>
-      <h1 id="nf-h">This page is not on the file.</h1>
+      <p class="eyebrow">Error</p>
+      <p class="nf-code" aria-hidden="true">404</p>
+      <h1 id="nf-h">There is no basis for this page.</h1>
       <p class="lede">The address may have moved or never existed. The record of everything we do is one page long, and it is a click away.</p>
       <div class="btn-row">
         <a class="btn btn--primary" href="/basis-io-site/">Back to the site</a>
