@@ -202,6 +202,14 @@ h3 { font: 700 21px/1.25 var(--font-headline); text-wrap: pretty; }
   -webkit-backdrop-filter: saturate(180%) blur(14px);
   backdrop-filter: saturate(180%) blur(14px);
 }
+/* white halo keeps header copy legible when navy plates pass beneath the glass */
+.site-header .wordmark,
+.site-header .site-nav a {
+  text-shadow:
+    0 0 2px rgba(255, 255, 255, 0.95),
+    0 0 6px rgba(255, 255, 255, 0.9),
+    0 0 12px rgba(255, 255, 255, 0.75);
+}
 .site-header__row {
   display: flex; flex-wrap: wrap;
   align-items: center; justify-content: space-between;
