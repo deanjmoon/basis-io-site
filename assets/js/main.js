@@ -55,3 +55,14 @@
     grids.forEach(function (el) { gio.observe(el); });
   }
 })();
+
+/* Enquiry form: reveal the free-text licensee field when Other is chosen.
+   Functional, so it lives outside the reduced-motion gate above. */
+(function () {
+  var sel = document.getElementById('enq-licensee');
+  var other = document.getElementById('licensee-other-field');
+  if (!sel || !other) return;
+  sel.addEventListener('change', function () {
+    other.hidden = sel.value !== 'Other';
+  });
+})();
