@@ -392,23 +392,6 @@ img.person__photo { padding: 0; object-fit: cover; height: auto; }
   text-transform: uppercase;
   color: var(--slate);
 }
-.enquiry-form select {
-  font: 400 17px/1.5 var(--font-body);
-  color: var(--navy);
-  background: var(--paper);
-  border: 1px solid var(--blue-200);
-  border-radius: 4px;
-  padding: 12px 14px;
-  width: 100%;
-  transition: border-color 180ms var(--ease);
-  box-shadow: 0 2px 8px rgba(11, 28, 48, 0.08);
-}
-.enquiry-form select:hover { border-color: var(--blue-300); }
-.enquiry-form select:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 0;
-  border-color: var(--accent);
-}
 .enquiry-form input,
 .enquiry-form textarea {
   font: 400 17px/1.5 var(--font-body);
