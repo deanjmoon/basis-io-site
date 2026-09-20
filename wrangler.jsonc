@@ -1,0 +1,10 @@
+{
+  // Cloudflare deployment config. The site is plain static assets;
+  // .assetsignore keeps repo internals out of the published copy.
+  "name": "basis-io-site",
+  "compatibility_date": "2026-09-18",
+  "assets": {
+    "directory": ".",
+    "not_found_handling": "404-page"
+  }
+}
