@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://deanjmoon.github.io/basis-io-site/sitemap.xml
+Sitemap: https://basis-io.com.au/sitemap.xml
