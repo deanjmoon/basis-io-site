@@ -91,8 +91,8 @@ Damien's, Gina's and Dean's personal LinkedIn URLs are already live and correct.
 
 ## Outstanding content (search the source for `TODO(copy)` / `TODO(asset)`)
 
-- Two proof points in the proof strip
-- Fourth scope line for Admin services and for Practice consulting
+- ~~Two proof points~~ done 2026-09-23 from the LinkedIn page (since 2010; specialties)
+- ~~Fourth scope lines~~ done 2026-09-23 from LinkedIn specialties
 - Three founder bios (keep them the same length — the cards sit side by side)
 - Three team portraits, 4:5 crop, ~1200×1500, shot the same way
 - ~~ABN in the footer~~ done 2026-09-18 (49 670 018 658, Rocket FP Solutions Pty Ltd)
