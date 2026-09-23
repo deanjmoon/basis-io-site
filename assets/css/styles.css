@@ -194,6 +194,11 @@ h3 { font: 700 21px/1.25 var(--font-headline); text-wrap: pretty; }
 .wordmark__io { font-weight: 700; font-style: normal; }
 .wordmark__bracket { font-style: normal; }
 
+/* inline wordmark for mentions of [basis-io] in running copy */
+.wm { font-family: var(--font-display); white-space: nowrap; }
+.wm__b { font-weight: 700; font-style: italic; }
+.wm__io { font-weight: 700; }
+
 /* ---------- header ---------- */
 
 .site-header {
