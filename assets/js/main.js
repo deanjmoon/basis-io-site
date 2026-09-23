@@ -54,4 +54,29 @@
     }, { threshold: 0.05 });
     grids.forEach(function (el) { gio.observe(el); });
   }
+
+  // proof numbers count up as the strip enters view
+  var counters = document.querySelectorAll('.proof .count');
+  if (counters.length) {
+    var countUp = function (el) {
+      var target = parseInt(el.getAttribute('data-count'), 10);
+      var start = null, dur = 1800;
+      var step = function (t) {
+        if (start === null) start = t;
+        var p = Math.min((t - start) / dur, 1);
+        var eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.round(target * eased);
+        if (p < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    };
+    var cio = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        cio.unobserve(entry.target);
+        countUp(entry.target);
+      });
+    }, { threshold: 0.6 });
+    counters.forEach(function (el) { el.textContent = '0'; cio.observe(el); });
+  }
 })();
