@@ -9,9 +9,9 @@
 | Live site | https://basis-io.com.au (HTTPS enforced, cert auto-renews) |
 | Repo | github.com/deanjmoon/basis-io-site (public — required for free GitHub Pages) |
 | Local copy | `~/Projects/basis-io-site` |
-| Hosting | GitHub Pages, `main` branch root, `.nojekyll` (no build step) |
-| DNS | GoDaddy: 4 × A records → GitHub Pages IPs, `www` CNAME → deanjmoon.github.io. **MX/TXT records are Microsoft 365 email — never touch** |
-| Deploy | `git push` → live in ~40s. Browsers cache pages ~10 min (hard-refresh to verify) |
+| Hosting | Vercel (project `basis-io-site`, team `deanjmoon`, region `syd1`), deploys from `main` on every push. Moved off GitHub Pages 2026-10-13. No build step; `vercel.json` holds headers, `.vercelignore` keeps repo internals out |
+| DNS | GoDaddy: `@` A → `76.76.21.21` (Vercel), `www` CNAME → `cname.vercel-dns.com` (308 redirect to apex, set in Vercel). **MX/TXT records are Microsoft 365 email — never touch** |
+| Deploy | `git push` to `main` → live in ~30s. Every pull request gets its own preview URL |
 
 ## Stack
 

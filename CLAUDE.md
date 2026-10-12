@@ -108,9 +108,12 @@ The client is resolving this. **Do not unilaterally rewrite copy to fix it** —
 
 ## Deploy
 
-GitHub Pages from the repository root of the default branch. No build step, so nothing to
-configure. `CNAME` at the root holds the custom domain.
+Vercel, project `basis-io-site` (team `deanjmoon`, region `syd1`), linked to this repo.
+Every push to `main` is a production deploy; every pull request gets a preview URL. No build
+step: `vercel.json` sets security and cache headers, `.vercelignore` keeps repo internals out
+of the deployment. Moved off GitHub Pages on 2026-10-13; the `CNAME` file is gone with it.
 
-`404.html` is served by GitHub Pages for any missing path. It uses **root-absolute
-`/basis-io-site/` paths** (a 404 can be served at any URL depth, so relative paths break) —
-these must be rewritten to `/` when the custom domain lands.
+DNS stays at GoDaddy. Only `@` (A → `76.76.21.21`) and `www` (CNAME → `cname.vercel-dns.com`)
+point at Vercel. **MX and TXT are Microsoft 365 email: never touch them.**
+
+`404.html` is served by Vercel for any missing path. It uses root-absolute `/` paths.
