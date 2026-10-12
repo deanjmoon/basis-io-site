@@ -1,0 +1,9 @@
+# Repo internals that are not part of the published site
+.git/
+.gitignore
+.assetsignore
+.nojekyll
+CLAUDE.md
+README.md
+HANDOVER.md
+wrangler.jsonc
