@@ -7,3 +7,6 @@ CLAUDE.md
 README.md
 HANDOVER.md
 wrangler.jsonc
+
+# Internal working deck: deployed as its own Vercel project (basis-io-deck), never on the public site
+deck/
