@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[basis-io] - Sales workbook (internal)</title>
+<meta name="robots" content="noindex, nofollow">
+
+<link rel="icon" href="/assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/assets/img/favicon-192.png" sizes="192x192" type="image/png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=PT+Serif:ital,wght@0,400;1,700&family=Silkscreen&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/styles.css?v=2">
+<link rel="stylesheet" href="/workbook/workbook.css?v=1">
+</head>
+<body class="wb">
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap site-header__row">
+    <a class="wordmark" href="/" aria-label="[basis-io] home"><span class="wordmark__bracket">[</span>basis-<span class="wordmark__io">io</span><span class="wordmark__bracket">]</span></a>
+    <p class="wb-flag">Internal · Not for distribution</p>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="band band--navy band--grid" aria-labelledby="wb-h">
+  <div class="wrap hero">
+    <p class="eyebrow">Sales workbook · Sales story, plan, targets, route to market</p>
+    <h1 id="wb-h">One story, told the same way by all four of us.</h1>
+    <p class="lede">Dean, Jason, Nanette and Damien answer the same questions separately. Answers land in one team sheet, side by side. The team then agrees one version of each answer.</p>
+    <ol class="wb-steps">
+      <li><span class="numeral">01</span> Choose your name. Answer alone, without looking at anyone else's answers first.</li>
+      <li><span class="numeral">02</span> Save to the team sheet. Answers sit side by side, one column per person.</li>
+      <li><span class="numeral">03</span> Workshop the differences. The agreed version goes in the sheet's Agreed column.</li>
+    </ol>
+    <p class="wb-source">Method after Mike Weinberg, <cite>New Sales. Simplified.</cite> (AMACOM, 2012): targets, sales story, plan.</p>
+  </div>
+</section>
+
+<section class="band band--card band--tight wb-id" aria-label="Who is answering">
+  <div class="wrap wb-id__row">
+    <div class="wb-id__field">
+      <label class="q__label" for="wb-person">Your name</label>
+      <select id="wb-person" name="wb-person">
+        <option value="">Choose…</option>
+        <option>Dean</option>
+        <option>Jason</option>
+        <option>Nanette</option>
+        <option>Damien</option>
+      </select>
+    </div>
+    <div class="wb-id__field">
+      <label class="q__label" for="wb-code">Team code</label>
+      <input type="password" id="wb-code" name="wb-code" autocomplete="off">
+    </div>
+    <p class="wb-id__note">Drafts save in this browser as you type. Saving sends them to the team sheet.</p>
+  </div>
+</section>
+
+<nav class="wb-tabs" aria-label="Workbook sections">
+  <div class="wrap">
+    <div class="wb-tabs__row">
+      <a class="wb-tab" href="#sales-story" aria-controls="sales-story" id="tab-sales-story"><span class="numeral">01</span> Sales story</a>
+      <a class="wb-tab" href="#business-plan" aria-controls="business-plan" id="tab-business-plan"><span class="numeral">02</span> Business plan</a>
+      <a class="wb-tab" href="#target-accounts" aria-controls="target-accounts" id="tab-target-accounts"><span class="numeral">03</span> Target accounts</a>
+      <a class="wb-tab" href="#go-to-market" aria-controls="go-to-market" id="tab-go-to-market"><span class="numeral">04</span> Go-to-market</a>
+    </div>
+  </div>
+</nav>
+
+<section class="band wb-panel" id="sales-story" data-tab="Sales story" aria-labelledby="sales-story-h">
+  <div class="wrap">
+  <div class="band__head">
+    <p class="eyebrow">Tab 01 · Weinberg's sales story</p>
+    <h2 id="sales-story-h">Sales story</h2>
+    <p class="lede lede--sm">Weinberg's order is fixed: the client's issues first, then what we offer, then why we are different. Most write it the other way round. Every claim must hold for what a buyer can buy today.</p>
+  </div>
+
+  <section class="wb-section" data-section="Positioning" aria-labelledby="s-position">
+    <div class="wb-section__head">
+      <p class="numeral">1.1</p>
+      <h3 id="s-position">Positioning</h3>
+      <p class="wb-section__intro">Answer as <span class="wm">[<span class="wm__b">basis-</span><span class="wm__io">io</span>]</span>, the agentic advice construction solution. The platform is not live yet.</p>
+    </div>
+    <div class="wb-section__body">
+    <div class="q">
+      <label class="q__label" for="story-position-one-line">In one sentence, what is <span class="wm">[<span class="wm__b">basis-</span><span class="wm__io">io</span>]</span>?</label>
+      <p class="q__hint">Say it the way you would to a licensee's head of advice. No adjectives.</p>
+      <textarea id="story-position-one-line" name="story.position.one-line" rows="3"></textarea>
+    </div>
+    <fieldset class="q choice">
+      <legend class="q__label">Which position should lead?</legend>
+      <p class="q__hint">The site holds the last three at once today. The team decides which one leads; the others support it.</p>
+      <div class="choice__opts">
+        <label class="choice__opt"><input type="radio" name="story.position.lead" value="Agentic advice construction"> Agentic advice construction</label>
+        <label class="choice__opt"><input type="radio" name="story.position.lead" value="The evidentiary layer between client and adviser"> The evidentiary layer between client and adviser</label>
+        <label class="choice__opt"><input type="radio" name="story.position.lead" value="Three service pillars: advice construction, admin services, practice consulting"> Three service pillars: advice construction, admin services, practice consulting</label>
+        <label class="choice__opt"><input type="radio" name="story.position.lead" value="Paraplanning"> Paraplanning</label>
+        <label class="choice__opt"><input type="radio" name="story.position.lead" value="Something else (say what below)"> Something else (say what below)</label>
+      </div>
+    </fieldset>
+    <div class="q">
+      <label class="q__label" for="story-position-lead-why">Why that position?</label>
+      <p class="q__hint">What does the buyer hear in it that the others miss?</p>
+      <textarea id="story-position-lead-why" name="story.position.lead-why" rows="3"></textarea>
+    </div>
+    <div class="q">
+      <label class="q__label" for="story-position-agentic">What does “agentic” mean to a licensee who has never seen the platform?</label>
+      <p class="q__hint">Describe the mechanism in plain words: what the software does, what a person still checks, what lands on the file.</p>
+      <textarea id="story-position-agentic" name="story.position.agentic" rows="4"></textarea>
+    </div>
+    <div class="q">
+      <label class="q__label" for="story-position-buyer-words">Words buyers already use for this problem</label>
+      <p class="q__hint">Lift them from calls, file reviews, licensee audit findings and ASIC reports. Buyers trust their own vocabulary.</p>
+      <textarea id="story-position-buyer-words" name="story.position.buyer-words" rows="3"></textarea>
+    </div>
+    <div class="q">
+      <label class="q__label" for="story-position-banned-words">Words we never use</label>
+      <p class="q__hint">The site already bans seamless, revolutionary and game-changing. Add the rest.</p>
+      <textarea id="story-position-banned-words" name="story.position.banned-words" rows="2"></textarea>
+    </div>
+    </div>
+  </section>
+  <section class="wb-section" data-section="Client issues" aria-labelledby="s-issues">
+    <div class="wb-section__head">
+      <p class="numeral">1.2</p>
+      <h3 id="s-issues">Client issues</h3>
+      <p class="wb-section__intro">Weinberg's core: pains removed, problems solved, results gained. Write each from the buyer's chair. Licensees and advice practices buy for different reasons, so each gets its own column.</p>
+    </div>
+    <div class="wb-section__body">
+    <div class="q q--pair">
+      <p class="q__label">Pains we remove</p>
+      <p class="q__hint">What keeps them up at night? E.g. failed file reviews, inconsistent SOAs across authorised representatives, remediation exposure, SOA turnaround, paraplanner turnover.</p>
+      <div class="pair">
+        <div class="pair__col">
+          <label class="pair__label" for="story-issues-pains-licensee">Licensee</label>
+          <textarea id="story-issues-pains-licensee" name="story.issues.pains.licensee" rows="4"></textarea>
+        </div>
+        <div class="pair__col">
+          <label class="pair__label" for="story-issues-pains-adviser">Adviser practice</label>
+          <textarea id="story-issues-pains-adviser" name="story.issues.pains.adviser" rows="4"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="q q--pair">
+      <p class="q__label">Problems we solve</p>
+      <p class="q__hint">Concrete, observable problems. E.g. best-interests reasoning missing from the file; SOAs bouncing between adviser and compliance.</p>
+      <div class="pair">
+        <div class="pair__col">
+          <label class="pair__label" for="story-issues-problems-licensee">Licensee</label>
+          <textarea id="story-issues-problems-licensee" name="story.issues.problems.licensee" rows="4"></textarea>
+        </div>
+        <div class="pair__col">
+          <label class="pair__label" for="story-issues-problems-adviser">Adviser practice</label>
+          <textarea id="story-issues-problems-adviser" name="story.issues.problems.adviser" rows="4"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="q q--pair">
+      <p class="q__label">Results and opportunities we create</p>
+      <p class="q__hint">What changes for them? E.g. more clients per adviser, audit-ready files, faster onboarding of new advisers.</p>
+      <div class="pair">
+        <div class="pair__col">
+          <label class="pair__label" for="story-issues-results-licensee">Licensee</label>
+          <textarea id="story-issues-results-licensee" name="story.issues.results.licensee" rows="4"></textarea>
+        </div>
+        <div class="pair__col">
+          <label class="pair__label" for="story-issues-results-adviser">Adviser practice</label>
+          <textarea id="story-issues-results-adviser" name="story.issues.results.adviser" rows="4"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="q q--pair">
+      <p class="q__label">The three issues they already feel without being told</p>
+      <p class="q__hint">Rank them. These lead every call, email and post.</p>
+      <div class="pair">
+        <div class="pair__col">
+          <label class="pair__label" for="story-issues-top3-licensee">Licensee</label>
+          <textarea id="story-issues-top3-licensee" name="story.issues.top3.licensee" rows="3"></textarea>
+        </div>
+        <div class="pair__col">
+          <label class="pair__label" for="story-issues-top3-adviser">Adviser practice</label>
+          <textarea id="story-issues-top3-adviser" name="story.issues.top3.adviser" rows="3"></textarea>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section class="wb-section" data-section="Offerings" aria-labelledby="s-offer">
+    <div class="wb-section__head">
+      <p class="numeral">1.3</p>
+      <h3 id="s-offer">Offerings</h3>
+      <p class="wb-section__intro">Only after the issues. Keep it short: what is bought, how it is delivered, how it is priced.</p>
+    </div>
+    <div class="wb-section__body">
+    <div class="q">
+      <label class="q__label" for="story-offer-today">What a buyer gets today</label>
+      <p class="q__hint">Services that exist and can be delivered next week.</p>
+      <textarea id="story-offer-today" name="story.offer.today" rows="4"></textarea>
+    </div>
+    <div class="q">
+      <label class="q__label" for="story-offer-platform">What the platform adds, and when</label>
+      <p class="q__hint">Separate what is built, what is in pilot and what is planned. Licensees will diligence this.</p>
+      <textarea id="story-offer-platform" name="story.offer.platform" rows="4"></textarea>
+    </div>
+    <div class="q">
+      <label class="q__label" for="story-offer-commercials">How it is bought</label>
+      <p class="q__hint">Per SOA, subscription, licensee panel arrangement, pilot? Who pays: the licensee or the practice?</p>
+      <textarea id="story-offer-commercials" name="story.offer.commercials" rows="3"></textarea>
+    </div>
+    </div>
+  </section>
+  <section class="wb-section" data-section="Differentiators" aria-labelledby="s-diff">
+    <div class="wb-section__head">
+      <p class="numeral">1.4</p>
+      <h3 id="s-diff">Differentiators</h3>
+      <p class="wb-section__intro">Why <span class="wm">[<span class="wm__b">basis-</span><span class="wm__io">io</span>]</span> over the alternatives. A differentiator without proof is a claim.</p>
+    </div>
+    <div class="wb-section__body">
+    <div class="q q--table">
+      <p class="q__label">Against each alternative, why us?</p>
+      <p class="q__hint">Be honest about where the alternative wins.</p>
+      <div class="tbl-scroll">
+      <table class="tbl" data-name="story.diff.alternatives" data-question="Against each alternative, why us?">
+        <thead><tr><th scope="col">Alternative</th><th scope="col">Why a buyer picks us instead</th><th scope="col">Proof (source and date)</th></tr></thead>
+        <tbody>
+          <tr data-row="In-house paraplanner"><th scope="row">In-house paraplanner</th><td><input type="text" aria-label="In-house paraplanner – Why a buyer picks us instead"></td><td><input type="text" aria-label="In-house paraplanner – Proof (source and date)"></td></tr>
+          <tr data-row="Outsourced or offshore paraplanning"><th scope="row">Outsourced or offshore paraplanning</th><td><input type="text" aria-label="Outsourced or offshore paraplanning – Why a buyer picks us instead"></td><td><input type="text" aria-label="Outsourced or offshore paraplanning – Proof (source and date)"></td></tr>
+          <tr data-row="Advice software alone"><th scope="row">Advice software alone</th><td><input type="text" aria-label="Advice software alone – Why a buyer picks us instead"></td><td><input type="text" aria-label="Advice software alone – Proof (source and date)"></td></tr>
+          <tr data-row="Doing nothing"><th scope="row">Doing nothing</th><td><input type="text" aria-label="Doing nothing – Why a buyer picks us instead"></td><td><input type="text" aria-label="Doing nothing – Proof (source and date)"></td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+    <div class="q">
+      <label class="q__label" for="story-diff-since-2010">What does advice construction since 2010 give us that a software start-up lacks?</label>
+      <p class="q__hint">The site cites 343 advisers, 209 practices and 28 licensees supported since 2010. Check the figures and date them before use.</p>
+      <textarea id="story-diff-since-2010" name="story.diff.since-2010" rows="4"></textarea>
+    </div>
+    <div class="q">
+      <label class="q__label" for="story-diff-licensee-trust">Why can a licensee trust us with their compliance standards?</label>
+      <p class="q__hint">Privacy, data security, insurance, review process, references.</p>
+      <textarea id="story-diff-licensee-trust" name="story.diff.licensee-trust" rows="4"></textarea>
+    </div>
+    </div>
+  </section>
+  <section class="wb-section" data-section="Power statements" aria-labelledby="s-power">
+    <div class="wb-section__head">
+      <p class="numeral">1.5</p>
+      <h3 id="s-power">Power statements</h3>
+      <p class="wb-section__intro">Weinberg's sales story compressed for each channel. Draft them; the workshop picks the winners.</p>
+    </div>
+    <div class="wb-section__body">
+    <div class="q">
+      <label class="q__label" for="story-power-licensee">Licensee power statement</label>
+      <p class="q__hint">“<span class="wm">[<span class="wm__b">basis-</span><span class="wm__io">io</span>]</span> helps licensees who … We … Unlike …” Three to four sentences.</p>
+      <textarea id="story-power-licensee" name="story.power.licensee" rows="4"></textarea>
+    </div>
+    <div class="q">
+      <label class="q__label" for="story-power-adviser">Adviser practice power statement</label>
+      <p class="q__hint">Same structure, written for a practice principal.</p>
+      <textarea id="story-power-adviser" name="story.power.adviser" rows="4"></textarea>
+    </div>
+    <div class="q">
+      <label class="q__label" for="story-power-30s">Thirty-second spoken version</label>
+      <p class="q__hint">Read it aloud and time it.</p>
+      <textarea id="story-power-30s" name="story.power.30s" rows="4"></textarea>
+    </div>
+    <div class="q">
+      <label class="q__label" for="story-power-voicemail">Voicemail, under 20 seconds</label>
+      <p class="q__hint">Name, one issue, one reason to call back, number twice.</p>
+      <textarea id="story-power-voicemail" name="story.power.voicemail" rows="3"></textarea>
+    </div>
+    <div class="q">
+      <label class="q__label" for="story-power-email">Cold email opener, three lines</label>
+      <p class="q__hint">Subject line, then the opener. No “I hope this finds you well”.</p>
+      <textarea id="story-power-email" name="story.power.email" rows="4"></textarea>
+    </div>
+    </div>
+  </section>
+  <section class="wb-section" data-section="Objections, proof and questions" aria-labelledby="s-objections">
+    <div class="wb-section__head">
+      <p class="numeral">1.6</p>
+      <h3 id="s-objections">Objections, proof and questions</h3>
+      
+    </div>
+    <div class="wb-section__body">
+    <div class="q q--pair">
+      <p class="q__label">Top objections, and our answer</p>
+      <p class="q__hint">Write each one as the buyer says it, then the answer.</p>
+      <div class="pair">
+        <div class="pair__col">
+          <label class="pair__label" for="story-objections-licensee">Licensee</label>
+          <textarea id="story-objections-licensee" name="story.objections.licensee" rows="6"></textarea>
+        </div>
+        <div class="pair__col">
+          <label class="pair__label" for="story-objections-adviser">Adviser practice</label>
+          <textarea id="story-objections-adviser" name="story.objections.adviser" rows="6"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="q">
+      <label class="q__label" for="story-proof-cases">Stories we can tell</label>
+      <p class="q__hint">Client, situation before, what we did, result. Note whether we have permission to name them.</p>
+      <textarea id="story-proof-cases" name="story.proof.cases" rows="5"></textarea>
+    </div>
+    <div class="q q--pair">
+      <p class="q__label">Discovery questions for the first meeting</p>
+      <p class="q__hint">Questions that get the buyer to describe the pain in their own words.</p>
+      <div class="pair">
+        <div class="pair__col">
+          <label class="pair__label" for="story-discovery-licensee">Licensee</label>
+          <textarea id="story-discovery-licensee" name="story.discovery.licensee" rows="5"></textarea>
+        </div>
+        <div class="pair__col">
+          <label class="pair__label" for="story-discovery-adviser">Adviser practice</label>
+          <textarea id="story-discovery-adviser" name="story.discovery.adviser" rows="5"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="q">
+      <label class="q__label" for="story-notes">Anything this tab missed</label>
+      <textarea id="story-notes" name="story.notes" rows="3"></textarea>
+    </div>
+    </div>
+  </section>
+  </div>
+</section>
+
+<section class="band wb-panel" id="business-plan" data-tab="Business plan" aria-labelledby="business-plan-h">
+  <div class="wrap">
+  <div class="band__head">
+    <p class="eyebrow">Tab 02 · The plan</p>
+    <h2 id="business-plan-h">Business plan</h2>
+    <p class="lede lede--sm">Weinberg's business plan fits on one page: the results we want, the strategies and actions that get there, and the numbers we track. These answers feed the investor deck.</p>
+  </div>
+
+  <section class="wb-section" data-section="Objectives, next 12 months" aria-labelledby="p-obj">
+    <div class="wb-section__head">
+      <p class="numeral">2.1</p>
+      <h3 id="p-obj">Objectives, next 12 months</h3>
+      <p class="wb-section__intro">Each number carries its basis.</p>
+    </div>
+    <div class="wb-section__body">
+    <div class="q">
+      <label class="q__label" for="plan-obj-revenue">Revenue target and the date it is measured</label>
+      <p class="q__hint">E.g. $X ARR by 30 June 2027.</p>
+      <input type="text" id="plan-obj-revenue" name="plan.obj.revenue">
+    </div>
+    <div class="q">
+      <label class="q__label" for="plan-obj-licensees">Licensees approving <span class="wm">[<span class="wm__b">basis-</span><span class="wm__io">io</span>]</span> for their practices</label>
+      <p class="q__hint">Number, by date.</p>
+      <input type="text" id="plan-obj-licensees" name="plan.obj.licensees">
+    </div>
+    <div class="q">
+      <label class="q__label" for="plan-obj-practices">Active advice practices</label>
+      <p class="q__hint">Number, by date.</p>
+      <input type="text" id="plan-obj-practices" name="plan.obj.practices">
+    </div>
+    <div class="q">
+      <label class="q__label" for="plan-obj-volume">Advice files constructed per month by year end</label>
+      <input type="text" id="plan-obj-volume" name="plan.obj.volume">
+    </div>
+    <div class="q">
+      <label class="q__label" for="plan-obj-investor">Milestones the investor deck needs to show</label>
+      <p class="q__hint">Traction an investor would accept: approved licensees, paying practices, files through the platform, retention.</p>
+      <textarea id="plan-obj-investor" name="plan.obj.investor" rows="4"></textarea>
+    </div>
+    </div>
+  </section>
+  <section class="wb-section" data-section="Pipeline maths" aria-labelledby="p-calc">
+    <div class="wb-section__head">
+      <p class="numeral">2.2</p>
+      <h3 id="p-calc">Pipeline maths</h3>
+      <p class="wb-section__intro">Work back from the revenue target to the weekly activity it takes. Licensees approve first, so the model runs in two stages: licensee approvals, then practices activated inside each approved licensee. Guesses are fine; label them below.</p>
+    </div>
+    <div class="wb-section__body calc" data-calc>
+      <div class="calc__inputs">
+        <div class="q q--num"><label class="q__label" for="plan-calc-revenue">12-month revenue target (AUD)</label><input type="number" min="0" step="1000" id="plan-calc-revenue" name="plan.calc.revenue" data-calc-in="revenue"></div>
+        <div class="q q--num"><label class="q__label" for="plan-calc-rev-practice">Revenue per active practice per year (AUD)</label><input type="number" min="0" step="500" id="plan-calc-rev-practice" name="plan.calc.rev-per-practice" data-calc-in="revPerPractice"></div>
+        <div class="q q--num"><label class="q__label" for="plan-calc-practices-per-lic">Practices activated per approved licensee</label><input type="number" min="0" step="1" id="plan-calc-practices-per-lic" name="plan.calc.practices-per-licensee" data-calc-in="practicesPerLicensee"></div>
+        <div class="q q--num"><label class="q__label" for="plan-calc-lic-win">Licensee opportunity → approval (%)</label><input type="number" min="0" max="100" step="1" id="plan-calc-lic-win" name="plan.calc.licensee-win-rate" data-calc-in="licWin"></div>
+        <div class="q q--num"><label class="q__label" for="plan-calc-mtg-opp">Meeting → qualified opportunity (%)</label><input type="number" min="0" max="100" step="1" id="plan-calc-mtg-opp" name="plan.calc.meeting-to-opp" data-calc-in="meetingToOpp"></div>
+        <div class="q q--num"><label class="q__label" for="plan-calc-prac-win">Practice meeting → active practice (%)</label><input type="number" min="0" max="100" step="1" id="plan-calc-prac-win" name="plan.calc.practice-win-rate" data-calc-in="pracWin"></div>
+        <div class="q q--num"><label class="q__label" for="plan-calc-conv-mtg">Conversation → meeting booked (%)</label><input type="number" min="0" max="100" step="1" id="plan-calc-conv-mtg" name="plan.calc.conversation-to-meeting" data-calc-in="convToMeeting"></div>
+        <div class="q q--num"><label class="q__label" for="plan-calc-touches">Touches per conversation</label><input type="number" min="0" step="1" id="plan-calc-touches" name="plan.calc.touches-per-conversation" data-calc-in="touches"></div>
+        <div class="q q--num"><label class="q__label" for="plan-calc-weeks">Selling weeks in the year</label><input type="number" min="1" step="1" id="plan-calc-weeks" name="plan.calc.weeks" data-calc-in="weeks"></div>
+        <div class="q q--num"><label class="q__label" for="plan-calc-sellers">People prospecting</label><input type="number" min="1" step="1" id="plan-calc-sellers" name="plan.calc.sellers" data-calc-in="sellers"></div>
+      </div>
+      <dl class="calc__out" aria-live="polite">
+        <div><dt>Active practices needed</dt><dd data-calc-out="practices">–</dd></div>
+        <div><dt>Approved licensees needed</dt><dd data-calc-out="licensees">–</dd></div>
+        <div><dt>Licensee opportunities</dt><dd data-calc-out="licOpps">–</dd></div>
+        <div><dt>Licensee meetings</dt><dd data-calc-out="licMeetings">–</dd></div>
+        <div><dt>Practice meetings</dt><dd data-calc-out="pracMeetings">–</dd></div>
+        <div><dt>Conversations</dt><dd data-calc-out="conversations">–</dd></div>
+        <div><dt>Touches in the year</dt><dd data-calc-out="touchesTotal">–</dd></div>
+        <div><dt>Touches per person per week</dt><dd data-calc-out="touchesPerPersonWeek">–</dd></div>
+      </dl>
+    <div class="q">
+      <label class="q__label" for="plan-calc-basis">Where each input comes from (source and date)</label>
+      <p class="q__hint">Mark guesses as guesses. Replace them with real conversion rates once a quarter of activity is logged.</p>
+      <textarea id="plan-calc-basis" name="plan.calc.basis" rows="3"></textarea>
+    </div>
+    </div>
+  </section>
+  <section class="wb-section" data-section="Activity targets, per person per week" aria-labelledby="p-activity">
+    <div class="wb-section__head">
+      <p class="numeral">2.3</p>
+      <h3 id="p-activity">Activity targets, per person per week</h3>
+      <p class="wb-section__intro">Activity is the only number we control. Set the weekly minimum for each person.</p>
+    </div>
+    <div class="wb-section__body">
+    <div class="q q--table">
+      <p class="q__label">Weekly activity by person</p>
+      <p class="q__hint">Leave a cell blank if that person does not own that activity.</p>
+      <div class="tbl-scroll">
+      <table class="tbl" data-name="plan.activity" data-question="Weekly activity by person">
+        <thead><tr><th scope="col">Activity</th><th scope="col">Dean</th><th scope="col">Jason</th><th scope="col">Nanette</th><th scope="col">Damien</th></tr></thead>
+        <tbody>
+          <tr data-row="Cold calls"><th scope="row">Cold calls</th><td><input type="text" aria-label="Cold calls – Dean"></td><td><input type="text" aria-label="Cold calls – Jason"></td><td><input type="text" aria-label="Cold calls – Nanette"></td><td><input type="text" aria-label="Cold calls – Damien"></td></tr>
+          <tr data-row="Prospecting emails"><th scope="row">Prospecting emails</th><td><input type="text" aria-label="Prospecting emails – Dean"></td><td><input type="text" aria-label="Prospecting emails – Jason"></td><td><input type="text" aria-label="Prospecting emails – Nanette"></td><td><input type="text" aria-label="Prospecting emails – Damien"></td></tr>
+          <tr data-row="LinkedIn connection requests"><th scope="row">LinkedIn connection requests</th><td><input type="text" aria-label="LinkedIn connection requests – Dean"></td><td><input type="text" aria-label="LinkedIn connection requests – Jason"></td><td><input type="text" aria-label="LinkedIn connection requests – Nanette"></td><td><input type="text" aria-label="LinkedIn connection requests – Damien"></td></tr>
+          <tr data-row="LinkedIn messages"><th scope="row">LinkedIn messages</th><td><input type="text" aria-label="LinkedIn messages – Dean"></td><td><input type="text" aria-label="LinkedIn messages – Jason"></td><td><input type="text" aria-label="LinkedIn messages – Nanette"></td><td><input type="text" aria-label="LinkedIn messages – Damien"></td></tr>
+          <tr data-row="Content pieces published"><th scope="row">Content pieces published</th><td><input type="text" aria-label="Content pieces published – Dean"></td><td><input type="text" aria-label="Content pieces published – Jason"></td><td><input type="text" aria-label="Content pieces published – Nanette"></td><td><input type="text" aria-label="Content pieces published – Damien"></td></tr>
+          <tr data-row="Meetings booked"><th scope="row">Meetings booked</th><td><input type="text" aria-label="Meetings booked – Dean"></td><td><input type="text" aria-label="Meetings booked – Jason"></td><td><input type="text" aria-label="Meetings booked – Nanette"></td><td><input type="text" aria-label="Meetings booked – Damien"></td></tr>
+          <tr data-row="Referrals asked for"><th scope="row">Referrals asked for</th><td><input type="text" aria-label="Referrals asked for – Dean"></td><td><input type="text" aria-label="Referrals asked for – Jason"></td><td><input type="text" aria-label="Referrals asked for – Nanette"></td><td><input type="text" aria-label="Referrals asked for – Damien"></td></tr>
+          <tr data-row="Licensee meetings held"><th scope="row">Licensee meetings held</th><td><input type="text" aria-label="Licensee meetings held – Dean"></td><td><input type="text" aria-label="Licensee meetings held – Jason"></td><td><input type="text" aria-label="Licensee meetings held – Nanette"></td><td><input type="text" aria-label="Licensee meetings held – Damien"></td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section class="wb-section" data-section="Strategies, ownership and rhythm" aria-labelledby="p-strategy">
+    <div class="wb-section__head">
+      <p class="numeral">2.4</p>
+      <h3 id="p-strategy">Strategies, ownership and rhythm</h3>
+      
+    </div>
+    <div class="wb-section__body">
+    <div class="q">
+      <label class="q__label" for="plan-strategies">Three strategies that deliver the objectives</label>
+      <p class="q__hint">E.g. land two mid-sized licensees as reference accounts before going wide.</p>
+      <textarea id="plan-strategies" name="plan.strategies" rows="4"></textarea>
+    </div>
+    <div class="q">
+      <label class="q__label" for="plan-owners">Who owns what</label>
+      <p class="q__hint">Licensee relationships, practice activation, content, data and CRM, investor materials.</p>
+      <textarea id="plan-owners" name="plan.owners" rows="4"></textarea>
+    </div>
+    <div class="q">
+      <label class="q__label" for="plan-time">Protected prospecting time</label>
+      <p class="q__hint">Weinberg's rule: block it in the diary like a client meeting. Which days, which hours, for whom?</p>
+      <textarea id="plan-time" name="plan.time" rows="3"></textarea>
+    </div>
+    <div class="q">
+      <label class="q__label" for="plan-review">Weekly pipeline review</label>
+      <p class="q__hint">When, who attends, what is reported.</p>
+      <textarea id="plan-review" name="plan.review" rows="3"></textarea>
+    </div>
+    </div>
+  </section>
+  <section class="wb-section" data-section="Risks and resources" aria-labelledby="p-risks">
+    <div class="wb-section__head">
+      <p class="numeral">2.5</p>
+      <h3 id="p-risks">Risks and resources</h3>
+      
+    </div>
+    <div class="wb-section__body">
+    <div class="q">
+      <label class="q__label" for="plan-risks">What could stop this?</label>
+      <p class="q__hint">Licensee approval cycles, platform timing, capacity to deliver, cash.</p>
+      <textarea id="plan-risks" name="plan.risks" rows="4"></textarea>
+    </div>
+    <div class="q">
+      <label class="q__label" for="plan-needs">What we need that we do not have</label>
+      <p class="q__hint">Budget, data, tools, people, introductions.</p>
+      <textarea id="plan-needs" name="plan.needs" rows="4"></textarea>
+    </div>
+    <div class="q">
+      <label class="q__label" for="plan-personal">What makes this year a win for you personally?</label>
+      <p class="q__hint">Weinberg asks this on purpose. Motivation keeps the plan alive.</p>
+      <textarea id="plan-personal" name="plan.personal" rows="3"></textarea>
+    </div>
+    <div class="q">
+      <label class="q__label" for="plan-notes">Anything this tab missed</label>
+      <textarea id="plan-notes" name="plan.notes" rows="3"></textarea>
+    </div>
+    </div>
+  </section>
+  </div>
+</section>
+
+<section class="band wb-panel" id="target-accounts" data-tab="Target accounts" aria-labelledby="target-accounts-h">
+  <div class="wrap">
+  <div class="band__head">
+    <p class="eyebrow">Tab 03 · Who we sell to</p>
+    <h2 id="target-accounts-h">Target accounts</h2>
+    <p class="lede lede--sm">Weinberg's first step: a finite, written list of strategic targets. A short list worked hard beats a long list worked lightly. Licensees come first because they decide whether their practices can use us.</p>
+  </div>
+  <div class="wb-callout">
+    <p class="eyebrow">Source list</p>
+    <p>The master list of authorised representatives by licensee lives in Google Drive. Shortlist from it, not from memory.</p>
+    <a class="rule-link" href="https://docs.google.com/spreadsheets/d/1VxPIslHjLgyGEVmWbRv7EvJHLA7AdOgz6g8ouYFVb9k/edit" target="_blank" rel="noopener">AR master list by licensee</a>
+  </div>
+  <section class="wb-section" data-section="Ideal licensee" aria-labelledby="t-lic">
+    <div class="wb-section__head">
+      <p class="numeral">3.1</p>
+      <h3 id="t-lic">Ideal licensee</h3>
+      
+    </div>
+    <div class="wb-section__body">
+    <div class="q">
+      <label class="q__label" for="targets-lic-profile">Profile of the licensee most likely to say yes</label>
+      <p class="q__hint">Size by number of authorised representatives, ownership (institution, privately owned, boutique), current paraplanning model.</p>
+      <textarea id="targets-lic-profile" name="targets.lic.profile" rows="4"></textarea>
+    </div>
+    <div class="q">
+      <label class="q__label" for="targets-lic-signals">Signals that a licensee needs us now</label>
+      <p class="q__hint">Recruiting advisers, recent ASIC action or remediation, new head of advice, file review backlog, acquisitions.</p>
+      <textarea id="targets-lic-signals" name="targets.lic.signals" rows="3"></textarea>
+    </div>
+    <div class="q">
+      <label class="q__label" for="targets-lic-process">How a licensee approves a provider</label>
+      <p class="q__hint">The steps, the documents they ask for, who signs, how long it takes.</p>
+      <textarea id="targets-lic-process" name="targets.lic.process" rows="4"></textarea>
+    </div>
+    </div>
+  </section>
+  <section class="wb-section" data-section="Ideal advice practice" aria-labelledby="t-prac">
+    <div class="wb-section__head">
+      <p class="numeral">3.2</p>
+      <h3 id="t-prac">Ideal advice practice</h3>
+      
+    </div>
+    <div class="wb-section__body">
+    <div class="q">
+      <label class="q__label" for="targets-prac-profile">Profile of the practice most likely to say yes</label>
+      <p class="q__hint">Number of advisers, client base, SOA volume, current paraplanning: in-house, outsourced or the adviser alone.</p>
+      <textarea id="targets-prac-profile" name="targets.prac.profile" rows="4"></textarea>
+    </div>
+    <div class="q">
+      <label class="q__label" for="targets-prac-signals">Signals that a practice needs us now</label>
+      <p class="q__hint">Paraplanner left, adviser joining, review backlog, growth plans.</p>
+      <textarea id="targets-prac-signals" name="targets.prac.signals" rows="3"></textarea>
+    </div>
+    </div>
+  </section>
+  <section class="wb-section" data-section="Stakeholders inside a licensee" aria-labelledby="t-stake">
+    <div class="wb-section__head">
+      <p class="numeral">3.3</p>
+      <h3 id="t-stake">Stakeholders inside a licensee</h3>
+      <p class="wb-section__intro">Map who is in the room and what each one needs to hear.</p>
+    </div>
+    <div class="wb-section__body">
+    <div class="q q--table">
+      <p class="q__label">Who decides, who influences</p>
+      <div class="tbl-scroll">
+      <table class="tbl" data-name="targets.stakeholders" data-question="Who decides, who influences">
+        <thead><tr><th scope="col">Role</th><th scope="col">What they care about</th><th scope="col">What they need to hear from us</th></tr></thead>
+        <tbody>
+          <tr data-row="CEO or managing director"><th scope="row">CEO or managing director</th><td><input type="text" aria-label="CEO or managing director – What they care about"></td><td><input type="text" aria-label="CEO or managing director – What they need to hear from us"></td></tr>
+          <tr data-row="Head of advice"><th scope="row">Head of advice</th><td><input type="text" aria-label="Head of advice – What they care about"></td><td><input type="text" aria-label="Head of advice – What they need to hear from us"></td></tr>
+          <tr data-row="Compliance or risk manager"><th scope="row">Compliance or risk manager</th><td><input type="text" aria-label="Compliance or risk manager – What they care about"></td><td><input type="text" aria-label="Compliance or risk manager – What they need to hear from us"></td></tr>
+          <tr data-row="Responsible manager"><th scope="row">Responsible manager</th><td><input type="text" aria-label="Responsible manager – What they care about"></td><td><input type="text" aria-label="Responsible manager – What they need to hear from us"></td></tr>
+          <tr data-row="Adviser champion"><th scope="row">Adviser champion</th><td><input type="text" aria-label="Adviser champion – What they care about"></td><td><input type="text" aria-label="Adviser champion – What they need to hear from us"></td></tr>
+          <tr data-row="Practice principal"><th scope="row">Practice principal</th><td><input type="text" aria-label="Practice principal – What they care about"></td><td><input type="text" aria-label="Practice principal – What they need to hear from us"></td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section class="wb-section" data-section="Tiers" aria-labelledby="t-tiers">
+    <div class="wb-section__head">
+      <p class="numeral">3.4</p>
+      <h3 id="t-tiers">Tiers</h3>
+      <p class="wb-section__intro">Weinberg keeps the list finite on purpose. Decide how many accounts each tier holds.</p>
+    </div>
+    <div class="wb-section__body">
+    <div class="q">
+      <label class="q__label" for="targets-tiers">What puts an account in tier 1, 2 or 3?</label>
+      <p class="q__hint">Tier 1: named, researched, worked personally every week. Tier 3: content and occasional touches.</p>
+      <textarea id="targets-tiers" name="targets.tiers" rows="4"></textarea>
+    </div>
+    <div class="q">
+      <label class="q__label" for="targets-tiers-capacity">How many tier 1 accounts the team can work at once</label>
+      <input type="text" id="targets-tiers-capacity" name="targets.tiers.capacity">
+    </div>
+    </div>
+  </section>
+  <section class="wb-section" data-section="Named targets" aria-labelledby="t-named">
+    <div class="wb-section__head">
+      <p class="numeral">3.5</p>
+      <h3 id="t-named">Named targets</h3>
+      <p class="wb-section__intro">Your shortlist. The workshop merges all four into one list.</p>
+    </div>
+    <div class="wb-section__body">
+    <div class="q q--table">
+      <p class="q__label">Top ten licensees</p>
+      <div class="tbl-scroll">
+      <table class="tbl tbl--numbered" data-name="targets.licensees" data-question="Top ten licensees">
+        <thead><tr><th scope="col">#</th><th scope="col">Licensee</th><th scope="col">Tier</th><th scope="col">Why them</th><th scope="col">Who we know there</th><th scope="col">Warm path in</th></tr></thead>
+        <tbody>
+          <tr data-row="1"><th scope="row">1</th><td><input type="text" aria-label="1 – Licensee"></td><td><input type="text" aria-label="1 – Tier"></td><td><input type="text" aria-label="1 – Why them"></td><td><input type="text" aria-label="1 – Who we know there"></td><td><input type="text" aria-label="1 – Warm path in"></td></tr>
+          <tr data-row="2"><th scope="row">2</th><td><input type="text" aria-label="2 – Licensee"></td><td><input type="text" aria-label="2 – Tier"></td><td><input type="text" aria-label="2 – Why them"></td><td><input type="text" aria-label="2 – Who we know there"></td><td><input type="text" aria-label="2 – Warm path in"></td></tr>
+          <tr data-row="3"><th scope="row">3</th><td><input type="text" aria-label="3 – Licensee"></td><td><input type="text" aria-label="3 – Tier"></td><td><input type="text" aria-label="3 – Why them"></td><td><input type="text" aria-label="3 – Who we know there"></td><td><input type="text" aria-label="3 – Warm path in"></td></tr>
+          <tr data-row="4"><th scope="row">4</th><td><input type="text" aria-label="4 – Licensee"></td><td><input type="text" aria-label="4 – Tier"></td><td><input type="text" aria-label="4 – Why them"></td><td><input type="text" aria-label="4 – Who we know there"></td><td><input type="text" aria-label="4 – Warm path in"></td></tr>
+          <tr data-row="5"><th scope="row">5</th><td><input type="text" aria-label="5 – Licensee"></td><td><input type="text" aria-label="5 – Tier"></td><td><input type="text" aria-label="5 – Why them"></td><td><input type="text" aria-label="5 – Who we know there"></td><td><input type="text" aria-label="5 – Warm path in"></td></tr>
+          <tr data-row="6"><th scope="row">6</th><td><input type="text" aria-label="6 – Licensee"></td><td><input type="text" aria-label="6 – Tier"></td><td><input type="text" aria-label="6 – Why them"></td><td><input type="text" aria-label="6 – Who we know there"></td><td><input type="text" aria-label="6 – Warm path in"></td></tr>
+          <tr data-row="7"><th scope="row">7</th><td><input type="text" aria-label="7 – Licensee"></td><td><input type="text" aria-label="7 – Tier"></td><td><input type="text" aria-label="7 – Why them"></td><td><input type="text" aria-label="7 – Who we know there"></td><td><input type="text" aria-label="7 – Warm path in"></td></tr>
+          <tr data-row="8"><th scope="row">8</th><td><input type="text" aria-label="8 – Licensee"></td><td><input type="text" aria-label="8 – Tier"></td><td><input type="text" aria-label="8 – Why them"></td><td><input type="text" aria-label="8 – Who we know there"></td><td><input type="text" aria-label="8 – Warm path in"></td></tr>
+          <tr data-row="9"><th scope="row">9</th><td><input type="text" aria-label="9 – Licensee"></td><td><input type="text" aria-label="9 – Tier"></td><td><input type="text" aria-label="9 – Why them"></td><td><input type="text" aria-label="9 – Who we know there"></td><td><input type="text" aria-label="9 – Warm path in"></td></tr>
+          <tr data-row="10"><th scope="row">10</th><td><input type="text" aria-label="10 – Licensee"></td><td><input type="text" aria-label="10 – Tier"></td><td><input type="text" aria-label="10 – Why them"></td><td><input type="text" aria-label="10 – Who we know there"></td><td><input type="text" aria-label="10 – Warm path in"></td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+    <div class="q q--table">
+      <p class="q__label">Top ten advice practices</p>
+      <div class="tbl-scroll">
+      <table class="tbl tbl--numbered" data-name="targets.practices" data-question="Top ten advice practices">
+        <thead><tr><th scope="col">#</th><th scope="col">Practice</th><th scope="col">Licensee</th><th scope="col">Why them</th><th scope="col">Who we know there</th><th scope="col">Warm path in</th></tr></thead>
+        <tbody>
+          <tr data-row="1"><th scope="row">1</th><td><input type="text" aria-label="1 – Practice"></td><td><input type="text" aria-label="1 – Licensee"></td><td><input type="text" aria-label="1 – Why them"></td><td><input type="text" aria-label="1 – Who we know there"></td><td><input type="text" aria-label="1 – Warm path in"></td></tr>
+          <tr data-row="2"><th scope="row">2</th><td><input type="text" aria-label="2 – Practice"></td><td><input type="text" aria-label="2 – Licensee"></td><td><input type="text" aria-label="2 – Why them"></td><td><input type="text" aria-label="2 – Who we know there"></td><td><input type="text" aria-label="2 – Warm path in"></td></tr>
+          <tr data-row="3"><th scope="row">3</th><td><input type="text" aria-label="3 – Practice"></td><td><input type="text" aria-label="3 – Licensee"></td><td><input type="text" aria-label="3 – Why them"></td><td><input type="text" aria-label="3 – Who we know there"></td><td><input type="text" aria-label="3 – Warm path in"></td></tr>
+          <tr data-row="4"><th scope="row">4</th><td><input type="text" aria-label="4 – Practice"></td><td><input type="text" aria-label="4 – Licensee"></td><td><input type="text" aria-label="4 – Why them"></td><td><input type="text" aria-label="4 – Who we know there"></td><td><input type="text" aria-label="4 – Warm path in"></td></tr>
+          <tr data-row="5"><th scope="row">5</th><td><input type="text" aria-label="5 – Practice"></td><td><input type="text" aria-label="5 – Licensee"></td><td><input type="text" aria-label="5 – Why them"></td><td><input type="text" aria-label="5 – Who we know there"></td><td><input type="text" aria-label="5 – Warm path in"></td></tr>
+          <tr data-row="6"><th scope="row">6</th><td><input type="text" aria-label="6 – Practice"></td><td><input type="text" aria-label="6 – Licensee"></td><td><input type="text" aria-label="6 – Why them"></td><td><input type="text" aria-label="6 – Who we know there"></td><td><input type="text" aria-label="6 – Warm path in"></td></tr>
+          <tr data-row="7"><th scope="row">7</th><td><input type="text" aria-label="7 – Practice"></td><td><input type="text" aria-label="7 – Licensee"></td><td><input type="text" aria-label="7 – Why them"></td><td><input type="text" aria-label="7 – Who we know there"></td><td><input type="text" aria-label="7 – Warm path in"></td></tr>
+          <tr data-row="8"><th scope="row">8</th><td><input type="text" aria-label="8 – Practice"></td><td><input type="text" aria-label="8 – Licensee"></td><td><input type="text" aria-label="8 – Why them"></td><td><input type="text" aria-label="8 – Who we know there"></td><td><input type="text" aria-label="8 – Warm path in"></td></tr>
+          <tr data-row="9"><th scope="row">9</th><td><input type="text" aria-label="9 – Practice"></td><td><input type="text" aria-label="9 – Licensee"></td><td><input type="text" aria-label="9 – Why them"></td><td><input type="text" aria-label="9 – Who we know there"></td><td><input type="text" aria-label="9 – Warm path in"></td></tr>
+          <tr data-row="10"><th scope="row">10</th><td><input type="text" aria-label="10 – Practice"></td><td><input type="text" aria-label="10 – Licensee"></td><td><input type="text" aria-label="10 – Why them"></td><td><input type="text" aria-label="10 – Who we know there"></td><td><input type="text" aria-label="10 – Warm path in"></td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+    <div class="q">
+      <label class="q__label" for="targets-notes">Anything this tab missed</label>
+      <textarea id="targets-notes" name="targets.notes" rows="3"></textarea>
+    </div>
+    </div>
+  </section>
+  </div>
+</section>
+
+<section class="band wb-panel" id="go-to-market" data-tab="Go-to-market" aria-labelledby="go-to-market-h">
+  <div class="wrap">
+  <div class="band__head">
+    <p class="eyebrow">Tab 04 · How we get in</p>
+    <h2 id="go-to-market-h">Go-to-market</h2>
+    <p class="lede lede--sm">The route from first touch to an approved licensee to an active practice. Channels, sequences, content and the data behind them.</p>
+  </div>
+
+  <section class="wb-section" data-section="Route to market" aria-labelledby="g-route">
+    <div class="wb-section__head">
+      <p class="numeral">4.1</p>
+      <h3 id="g-route">Route to market</h3>
+      
+    </div>
+    <div class="wb-section__body">
+    <div class="q">
+      <label class="q__label" for="gtm-route">From first touch to active practice, step by step</label>
+      <p class="q__hint">E.g. licensee head of advice → due diligence pack → approval → introduced to three practices → pilot files → panel.</p>
+      <textarea id="gtm-route" name="gtm.route" rows="4"></textarea>
+    </div>
+    <div class="q">
+      <label class="q__label" for="gtm-diligence">What a licensee must see before approving us</label>
+      <p class="q__hint">The due diligence pack: insurance, privacy and data security, sample files, process, references, platform controls.</p>
+      <textarea id="gtm-diligence" name="gtm.diligence" rows="4"></textarea>
+    </div>
+    <div class="q">
+      <label class="q__label" for="gtm-pilot">The pilot offer</label>
+      <p class="q__hint">What a first engagement looks like: scope, price, length, success measure.</p>
+      <textarea id="gtm-pilot" name="gtm.pilot" rows="3"></textarea>
+    </div>
+    </div>
+  </section>
+  <section class="wb-section" data-section="Channels" aria-labelledby="g-channels">
+    <div class="wb-section__head">
+      <p class="numeral">4.2</p>
+      <h3 id="g-channels">Channels</h3>
+      <p class="wb-section__intro">Pick the channels we will actually run. Fewer, done properly.</p>
+    </div>
+    <div class="wb-section__body">
+    <div class="q q--table">
+      <p class="q__label">Channel plan</p>
+      <div class="tbl-scroll">
+      <table class="tbl" data-name="gtm.channels" data-question="Channel plan">
+        <thead><tr><th scope="col">Channel</th><th scope="col">Use it? (yes/no)</th><th scope="col">Owner</th><th scope="col">Weekly volume</th><th scope="col">Main message</th></tr></thead>
+        <tbody>
+          <tr data-row="Cold calls"><th scope="row">Cold calls</th><td><input type="text" aria-label="Cold calls – Use it? (yes/no)"></td><td><input type="text" aria-label="Cold calls – Owner"></td><td><input type="text" aria-label="Cold calls – Weekly volume"></td><td><input type="text" aria-label="Cold calls – Main message"></td></tr>
+          <tr data-row="Email"><th scope="row">Email</th><td><input type="text" aria-label="Email – Use it? (yes/no)"></td><td><input type="text" aria-label="Email – Owner"></td><td><input type="text" aria-label="Email – Weekly volume"></td><td><input type="text" aria-label="Email – Main message"></td></tr>
+          <tr data-row="LinkedIn connections and messages"><th scope="row">LinkedIn connections and messages</th><td><input type="text" aria-label="LinkedIn connections and messages – Use it? (yes/no)"></td><td><input type="text" aria-label="LinkedIn connections and messages – Owner"></td><td><input type="text" aria-label="LinkedIn connections and messages – Weekly volume"></td><td><input type="text" aria-label="LinkedIn connections and messages – Main message"></td></tr>
+          <tr data-row="LinkedIn content"><th scope="row">LinkedIn content</th><td><input type="text" aria-label="LinkedIn content – Use it? (yes/no)"></td><td><input type="text" aria-label="LinkedIn content – Owner"></td><td><input type="text" aria-label="LinkedIn content – Weekly volume"></td><td><input type="text" aria-label="LinkedIn content – Main message"></td></tr>
+          <tr data-row="Events and conferences"><th scope="row">Events and conferences</th><td><input type="text" aria-label="Events and conferences – Use it? (yes/no)"></td><td><input type="text" aria-label="Events and conferences – Owner"></td><td><input type="text" aria-label="Events and conferences – Weekly volume"></td><td><input type="text" aria-label="Events and conferences – Main message"></td></tr>
+          <tr data-row="Referral partners"><th scope="row">Referral partners</th><td><input type="text" aria-label="Referral partners – Use it? (yes/no)"></td><td><input type="text" aria-label="Referral partners – Owner"></td><td><input type="text" aria-label="Referral partners – Weekly volume"></td><td><input type="text" aria-label="Referral partners – Main message"></td></tr>
+          <tr data-row="Webinars or briefings"><th scope="row">Webinars or briefings</th><td><input type="text" aria-label="Webinars or briefings – Use it? (yes/no)"></td><td><input type="text" aria-label="Webinars or briefings – Owner"></td><td><input type="text" aria-label="Webinars or briefings – Weekly volume"></td><td><input type="text" aria-label="Webinars or briefings – Main message"></td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section class="wb-section" data-section="Outreach sequence" aria-labelledby="g-seq">
+    <div class="wb-section__head">
+      <p class="numeral">4.3</p>
+      <h3 id="g-seq">Outreach sequence</h3>
+      <p class="wb-section__intro">Draft the first six touches to a licensee head of advice.</p>
+    </div>
+    <div class="wb-section__body">
+    <div class="q q--table">
+      <p class="q__label">Licensee sequence</p>
+      <div class="tbl-scroll">
+      <table class="tbl" data-name="gtm.sequence" data-question="Licensee sequence">
+        <thead><tr><th scope="col">Touch</th><th scope="col">Day</th><th scope="col">Channel</th><th scope="col">Message in one line</th></tr></thead>
+        <tbody>
+          <tr data-row="Touch 1"><th scope="row">Touch 1</th><td><input type="text" aria-label="Touch 1 – Day"></td><td><input type="text" aria-label="Touch 1 – Channel"></td><td><input type="text" aria-label="Touch 1 – Message in one line"></td></tr>
+          <tr data-row="Touch 2"><th scope="row">Touch 2</th><td><input type="text" aria-label="Touch 2 – Day"></td><td><input type="text" aria-label="Touch 2 – Channel"></td><td><input type="text" aria-label="Touch 2 – Message in one line"></td></tr>
+          <tr data-row="Touch 3"><th scope="row">Touch 3</th><td><input type="text" aria-label="Touch 3 – Day"></td><td><input type="text" aria-label="Touch 3 – Channel"></td><td><input type="text" aria-label="Touch 3 – Message in one line"></td></tr>
+          <tr data-row="Touch 4"><th scope="row">Touch 4</th><td><input type="text" aria-label="Touch 4 – Day"></td><td><input type="text" aria-label="Touch 4 – Channel"></td><td><input type="text" aria-label="Touch 4 – Message in one line"></td></tr>
+          <tr data-row="Touch 5"><th scope="row">Touch 5</th><td><input type="text" aria-label="Touch 5 – Day"></td><td><input type="text" aria-label="Touch 5 – Channel"></td><td><input type="text" aria-label="Touch 5 – Message in one line"></td></tr>
+          <tr data-row="Touch 6"><th scope="row">Touch 6</th><td><input type="text" aria-label="Touch 6 – Day"></td><td><input type="text" aria-label="Touch 6 – Channel"></td><td><input type="text" aria-label="Touch 6 – Message in one line"></td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section class="wb-section" data-section="Content" aria-labelledby="g-content">
+    <div class="wb-section__head">
+      <p class="numeral">4.4</p>
+      <h3 id="g-content">Content</h3>
+      <p class="wb-section__intro">Content earns the meeting that a cold call asks for.</p>
+    </div>
+    <div class="wb-section__body">
+    <div class="q">
+      <label class="q__label" for="gtm-content-themes">Three content themes we own</label>
+      <p class="q__hint">Topics where we have earned a view: file evidence, best-interests reasoning, advice capacity, AI in advice done properly.</p>
+      <textarea id="gtm-content-themes" name="gtm.content.themes" rows="4"></textarea>
+    </div>
+    <div class="q">
+      <label class="q__label" for="gtm-content-cadence">Formats, cadence and who writes</label>
+      <textarea id="gtm-content-cadence" name="gtm.content.cadence" rows="3"></textarea>
+    </div>
+    <div class="q">
+      <label class="q__label" for="gtm-content-forwardable">What would a head of advice forward to their CEO?</label>
+      <textarea id="gtm-content-forwardable" name="gtm.content.forwardable" rows="3"></textarea>
+    </div>
+    </div>
+  </section>
+  <section class="wb-section" data-section="Partners" aria-labelledby="g-partners">
+    <div class="wb-section__head">
+      <p class="numeral">4.5</p>
+      <h3 id="g-partners">Partners</h3>
+      
+    </div>
+    <div class="wb-section__body">
+    <div class="q">
+      <label class="q__label" for="gtm-partners">Who already has the buyer's attention?</label>
+      <p class="q__hint">Platforms, research houses, compliance consultants, industry bodies, software vendors. What do we offer them?</p>
+      <textarea id="gtm-partners" name="gtm.partners" rows="4"></textarea>
+    </div>
+    </div>
+  </section>
+  <section class="wb-section" data-section="Data, tools and compliance" aria-labelledby="g-data">
+    <div class="wb-section__head">
+      <p class="numeral">4.6</p>
+      <h3 id="g-data">Data, tools and compliance</h3>
+      <p class="wb-section__intro">Phase two adds contact numbers and email addresses to the target list. Decide the rules first.</p>
+    </div>
+    <div class="wb-section__body">
+    <div class="q">
+      <label class="q__label" for="gtm-data-enrich">How we enrich the target list</label>
+      <p class="q__hint">Sources for phone numbers and emails, who does it, how it is checked.</p>
+      <textarea id="gtm-data-enrich" name="gtm.data.enrich" rows="3"></textarea>
+    </div>
+    <div class="q">
+      <label class="q__label" for="gtm-data-crm">Where the pipeline lives</label>
+      <p class="q__hint">One system of record for accounts, contacts, activity and stage.</p>
+      <textarea id="gtm-data-crm" name="gtm.data.crm" rows="3"></textarea>
+    </div>
+    <div class="q">
+      <label class="q__label" for="gtm-data-compliance">Outreach compliance</label>
+      <p class="q__hint">Spam Act 2003 (consent, sender identification, unsubscribe), the Do Not Call Register and the Privacy Act. Who checks, and how?</p>
+      <textarea id="gtm-data-compliance" name="gtm.data.compliance" rows="3"></textarea>
+    </div>
+    <div class="q">
+      <label class="q__label" for="gtm-notes">Anything this tab missed</label>
+      <textarea id="gtm-notes" name="gtm.notes" rows="3"></textarea>
+    </div>
+    </div>
+  </section>
+  </div>
+</section>
+
+</main>
+
+<div class="wb-bar" role="region" aria-label="Save">
+  <div class="wrap wb-bar__row">
+    <p class="wb-bar__status" data-status aria-live="polite">Drafts save in this browser.</p>
+    <div class="wb-bar__actions">
+      <button type="button" class="btn btn--secondary btn--sm" data-action="print">Print blank</button>
+      <button type="button" class="btn btn--secondary btn--sm" data-action="export">Download CSV</button>
+      <button type="button" class="btn btn--primary btn--sm" data-action="save">Save to team sheet</button>
+    </div>
+  </div>
+</div>
+
+<script src="/workbook/workbook.js?v=1" defer></script>
+</body>
+</html>

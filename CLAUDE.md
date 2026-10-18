@@ -106,6 +106,21 @@ The page currently holds three positions at once: *evidentiary layer* (hero),
 *three service pillars* (middle), *paraplanning* (About section and one engagement model).
 The client is resolving this. **Do not unilaterally rewrite copy to fix it** — flag it.
 
+## Internal sales workbook (`/workbook`)
+
+Team-only page (added 2026-10-18), separate from the marketing page and exempt from the
+one-stylesheet / one-script rule: `workbook/index.html`, `workbook.css` (layered on
+`styles.css` tokens), `workbook.js`. Four tabs after Mike Weinberg's *New Sales. Simplified.*:
+Sales story · Business plan · Target accounts · Go-to-market. Never linked from the site,
+never in `sitemap.xml`; `noindex` via meta tag and `X-Robots-Tag` header in `vercel.json`.
+All questions are static HTML, so the page prints as a blank workbook without JS.
+
+Answers: drafts in `localStorage` per person; **Save** POSTs to a Google Apps Script web app
+(`tools/workbook-sheet.gs`, setup steps in its header) which writes a "Side by side" tab (one
+column per person + Agreed) and a "Log" tab. The endpoint is write-only and checks a shared
+team code. Token `REPLACE-SHEET-ENDPOINT` in `workbook.js` until the script is deployed.
+Phase 2: contact enrichment of the AR master list (Drive) and pipeline tracking.
+
 ## Deploy
 
 Vercel, project `basis-io-site` (team `deanjmoon`, region `syd1`), linked to this repo.
