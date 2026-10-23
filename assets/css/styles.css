@@ -446,6 +446,7 @@ img.person__photo { padding: 0; object-fit: cover; height: auto; }
 }
 .site-footer__legal p, .site-footer__legal a { font: 400 14px/1.45 var(--font-body); color: var(--blue-200); }
 .site-footer__legal a { border-bottom: 1px solid var(--accent); }
+.site-footer__links { display: flex; gap: 24px; }
 
 /* ---------- narrow viewports ---------- */
 
